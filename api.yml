@@ -78,7 +78,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ModelExperimentStatusResponse'
+                oneOf:
+                  - $ref: '#/components/schemas/ProjectionResponse'
+                  - $ref: '#/components/schemas/SensitivityAnalysisResponse'
 
   # Update model
   /models/{modelId}/edit-indicators:
@@ -214,6 +216,7 @@ components:
         experimentType:
           type: string
           enum: ["PROJECTION", "SENSITIVITY_ANALYSIS"]
+    
     ProjectionParameters:
       allOf:
         - $ref: '#/components/schemas/ModelExperimentCreationRequest'
@@ -283,32 +286,89 @@ components:
     ModelExperimentStatusResponse:
       type: object
       properties:
+        modelId:
+          type: string
+          format: uuid
         experimentId:
           type: string
           format: uuid
+        experimentType:
+          type: string
+          enum: ["PROJECTION", "SENSITIVITY_ANALYSIS"]
         status:
           type: string
           enum: ["Completed", "In Progress"]
-        results:
-          type: array
-          items:
-            type: object
-            properties:
-              concept:
-                type: string
-              values:
-                allOf:
-                  - $ref: '#/components/schemas/TimeSeries'
-              confidenceInterval:
+        
+    ProjectionResponse:
+      allOf:
+        - $ref: '#/components/schemas/ModelExperimentStatusResponse'
+        - type: object
+          properties:
+            results:
+              type: array
+              items:
                 type: object
                 properties:
-                  upper:
+                  concept:
+                    type: string
+                  values:
                     allOf:
                       - $ref: '#/components/schemas/TimeSeries'
-                  lower:
-                    allOf:
-                      - $ref: '#/components/schemas/TimeSeries'
+                  confidenceInterval:
+                    type: object
+                    properties:
+                      upper:
+                        allOf:
+                          - $ref: '#/components/schemas/TimeSeries'
+                      lower:
+                        allOf:
+                          - $ref: '#/components/schemas/TimeSeries'
     
+    SensitivityAnalysisResponse:
+      allOf:
+        - $ref: '#/components/schemas/ModelExperimentStatusResponse'
+        - type: object
+          properties:
+            immediate:
+              type: object
+              properties:
+                source:
+                  type: array
+                  items:
+                    type: string
+                target:
+                  type: array
+                  items:
+                    type: string
+                value:
+                  type: array
+                  items:
+                    type: number
+            global:
+              type: object
+              properties:
+                source:
+                  type: array
+                  items:
+                    type: string
+                target:
+                  type: array
+                  items:
+                    type: string
+                value:
+                  type: array
+                  items:
+                    type: number
+            pathways:
+              type: object
+              properties:
+                path:
+                  type: array
+                  items:
+                    type: string
+                score:
+                  type: number
+
     EditEdgesRequest:
       type: object
       properties:
@@ -323,6 +383,7 @@ components:
                 type: string
               weight:
                 type: number
+    
     EditEdgesRequestV2:
       type: object
       properties:
@@ -339,6 +400,7 @@ components:
                 type: number
               second_order_weight:
                 type: number
+    
     EditEdgesResponse:
       type: object
       properties:
