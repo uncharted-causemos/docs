@@ -17,7 +17,7 @@
 | ------------- |-------------| -----| ---- |
 | Projection | :white_check_mark: | :construction: | :white_check_mark: |
 | Sensitivity | :white_check_mark: | :question: | :construction: |
-| Goal optimizaiton | :white_checkmark: | :question: | :question: |
+| Goal optimizaiton | :white_check_mark: | :question: | :question: |
 | Validation | :white_check_mark: | :question: | :question: |
 
 
