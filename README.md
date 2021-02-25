@@ -1,8 +1,9 @@
 ## Status
+Integration and completion status with respect to api spec.
 
 ### API integration
 
-| End point      | DySE           | Delhi  |
+| End point      | DySE           | Delphi  |
 | ------------- |-------------| -----|
 | POST /create-model | :white_check_mark: | :white_check_mark: |
 | GET /models/:modelId | :question: | :question: |
@@ -13,7 +14,7 @@
 
 
 ### Experiment types
-| Experiment type      | DySE           | Delhi  | Causemos (UI/interaction) |
+| Experiment type      | DySE           | Delphi  | Causemos (UI/interaction) |
 | ------------- |-------------| -----| ---- |
 | Projection | :white_check_mark: | :construction: | :white_check_mark: |
 | Sensitivity | :white_check_mark: | :question: | :white_check_mark: :construction: |
