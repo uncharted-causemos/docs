@@ -13,10 +13,10 @@
 
 
 ### Experiment types
-| Experiment type      | DySE           | Delhi  | Causemos |
+| Experiment type      | DySE           | Delhi  | Causemos (UI/interaction) |
 | ------------- |-------------| -----| ---- |
 | Projection | :white_check_mark: | :construction: | :white_check_mark: |
-| Sensitivity | :white_check_mark: | :question: | :construction: |
+| Sensitivity | :white_check_mark: | :question: | :white_check_mark: :construction: |
 | Goal optimizaiton | :white_check_mark: | :question: | :question: |
 | Validation | :white_check_mark: | :question: | :question: |
 
