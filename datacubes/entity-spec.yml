@@ -1,0 +1,17 @@
+info:
+  description: Entity models for managing datacubes in Causemos
+  version: "1.0"
+  title: Entity models for managing datacubes in Causemos
+schema:
+  object1:
+    type: object
+    properties:
+      id:
+        type: string
+        description: stub description
+  object2:
+    type: object
+    properties:
+      id:
+        type: string
+        description: stub description
