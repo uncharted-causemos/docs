@@ -211,8 +211,10 @@ components:
                 type: string
               target:
                 type: string
-              weight:
-                type: number
+              weights:
+                type: array
+                items:
+                  type: number
 
     ModelExperimentCreationRequest:
       type: object
