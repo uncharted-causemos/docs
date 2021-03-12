@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
 HOST=$1
-MODEL=$2
-EID=$3
+AUTH=$2
+MODEL=$3
+EID=$4
 
 echo "$HOST/delphi/models/$MODEL/experiments/$EID"
 curl -XGET \
+  -H "Authorization: Basic $AUTH" \
   -H "Content-type: application/json" \
-  $HOST/delphi/models/$MODEL/experiments/$EID
+  $HOST/models/$MODEL/experiments/$EID
 

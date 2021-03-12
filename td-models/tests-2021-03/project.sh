@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
 HOST=$1
-MODEL=$2
-PAYLOAD=$3
+AUTH=$2
+MODEL=$3
+PAYLOAD=$4
 
 curl -XPOST \
+  -H "Authorization: Basic $AUTH" \
   -H "Content-type: application/json" \
-   $HOST/delphi/models/$MODEL/experiments -d@$PAYLOAD
+   $HOST/models/$MODEL/experiments -d@$PAYLOAD
