@@ -76,6 +76,7 @@
                 },
                 "name": "heavy rainfall",
                 "concept": "rainfall",
+                "concept_score": 1,
                 "adjectives": [],
                 "polarity": 1
             },
@@ -85,6 +86,7 @@
                 },
                 "name": "Tropical Storm Amanda",
                 "concept": "storm",
+                "concept_score": 1,
                 "adjectives": [],
                 "polarity": 1
             },
@@ -99,6 +101,7 @@
                     "TEXT": "to heavy rainfall"
                 },
                 "concept": "rainfall",
+                "concept_score": 1,
                 "name": "to heavy rainfall",
                 "adjectives": [],
                 "polarity": 1
@@ -110,6 +113,7 @@
                 },
                 "name": "other extreme weather events that lead to heavy rainfall",
                 "concept": "weather",
+                "concept_score": 1,
                 "adjectives": [],
                 "polarity": 1
             },
@@ -125,6 +129,7 @@
                 },
                 "name": "rainfall",
                 "concept": "rainfall",
+                "concept_score": 1,
                 "adjectives": [],
                 "polarity": 1
             },
@@ -133,6 +138,7 @@
                     "TEXT": "recent heavy rains"
                 },
                 "concept": "weather",
+                "concept_score": 1,
                 "name": "recent heavy rains",
                 "adjectives": [],
                 "polarity": 1
