@@ -8,9 +8,6 @@ paths:
   /create-model:
     post:
       summary: Create a new model
-      responses:
-        "200":
-          description: OK
       requestBody:
         content:
           application/json:
@@ -18,6 +15,13 @@ paths:
               $ref: "#/components/schemas/ModelCreationRequest"
         description: Create a new model by providng the INDRA statements and node/edge parameters
         required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ModelCreationResponse"
 
   # Status
   /models/{modelId}:
