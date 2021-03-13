@@ -35,14 +35,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  id:
-                    type: string
-                    format: uuid
-                  status:
-                    type: string
-                    description: Model status
+                $ref: "#/components/schemas/ModelCreationResponse"
 
   # Experiments
   /models/{modelId}/experiments:
@@ -212,7 +205,9 @@ components:
               target:
                 type: string
               weight:
-                type: number
+                type: array
+                items:
+                  type: number
 
     ModelExperimentCreationRequest:
       type: object
