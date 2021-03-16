@@ -106,7 +106,6 @@ paths:
             schema:
               oneOf:
                 - $ref: '#/components/schemas/EditEdgesRequest'
-                - $ref: '#/components/schemas/EditEdgesRequestV2'
       responses:
         "200":
           description: OK
@@ -380,25 +379,10 @@ components:
                 type: string
               target:
                 type: string
-              weight:
-                type: number
-    
-    EditEdgesRequestV2:
-      type: object
-      properties:
-        relations:
-          type: array
-          items:
-            type: object
-            properties:
-              source:
-                type: string
-              target:
-                type: string
-              first_order_weight:
-                type: number
-              second_order_weight:
-                type: number
+              weights:
+                type: array
+                items:
+                  type: number
     
     EditEdgesResponse:
       type: object
