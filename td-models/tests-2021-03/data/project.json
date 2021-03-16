@@ -1,0 +1,23 @@
+{
+	"experimentType": "PROJECTION", 
+	"experimentParam": {
+    "startTime": 1700000000000,
+    "endTime": 1800000000000,
+    "numTimesteps": 10,
+    "constraints": [
+      {
+        "concept": "rainfall",
+        "values": [ { "step": 0, "value": 10 }]
+      },
+      {
+        "concept": "storm",
+        "values": [ { "step": 0, "value": 7 }]
+      },
+      {
+        "concept": "weather",
+        "values": [ { "step": 0, "value": 5 }]
+      }
+    ]
+  }
+}
+
