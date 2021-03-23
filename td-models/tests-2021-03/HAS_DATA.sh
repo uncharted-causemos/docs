@@ -3,7 +3,7 @@
 source ./vars.sh
 
 MODEL="HAS_DATA"
-SLEEP=5
+SLEEP=10
 
 echo "Creating model with indicator data"
 time ./create-model.sh $HOST $AUTH "data/${MODEL}.json"
