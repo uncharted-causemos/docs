@@ -9,12 +9,12 @@ echo "Creating model with indicator data"
 time ./create-model.sh $HOST $AUTH "data/${MODEL}.json"
 
 echo "Sleeping $SLEEP"
-./model-status.sh $HOST $AUTH $MODEL
 sleep $SLEEP
+./model-status.sh $HOST $AUTH $MODEL
 
 echo "Sleeping $SLEEP"
-./model-status.sh $HOST $AUTH $MODEL
 sleep $SLEEP
+./model-status.sh $HOST $AUTH $MODEL
 
 echo "Running experiment"
 EID=$(./project.sh $HOST $AUTH $MODEL "data/project.json" | python -c \
@@ -22,6 +22,5 @@ EID=$(./project.sh $HOST $AUTH $MODEL "data/project.json" | python -c \
 
 echo "Sleeping 10s"
 sleep 10
-
 echo "Fetching experiment result $HOST $MODEL $EID"
 ./experiment-result.sh $HOST $AUTH $MODEL $EID
