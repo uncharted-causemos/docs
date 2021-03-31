@@ -1,0 +1,63 @@
+{
+    "$schema": "./cube.schema.json",
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "name": "DSSAT",
+    "description": "The Decision Support System for Agrotechnology Transfer (DSSAT) comprises dynamic crop growth simulation model for over 40 crops.",
+    "created": "1970-01-01T00:00:00Z",
+    "job_id": "123e4567-e89b-12d3-a456-426614174000",
+    "model_id": "123e4567-e89b-12d3-a456-426614174000",
+    "data_paths": [
+        "runs/<run-id>/<cube-id-1>",
+        "runs/<run-id>/<cube-id-2>"
+    ],
+    "pre_gen_output_paths": [
+        "runs/<run-id>/<cube-id-1>/pre-gen"
+    ],
+    "default_run": false,
+    "tags": [
+        "Agriculture",
+        "DSSAT",
+        "Ethiopia",
+        "crop production"
+    ],
+    "geography": {
+        "country": [
+            "Ethiopia",
+            "South Sudan"
+        ],
+        "admin1": [
+            "Oromia",
+            "Sidama",
+            "Amhara"
+        ],
+        "admin2": [
+            "West Gojjam",
+            "East Gojjam",
+            "Agew Awi",
+            "Arsi",
+            "Bale",
+            "Borana"
+        ],
+        "admin3": [
+            "Aminyaa",
+            "Askoo",
+            "Coole",
+            "Galaanaa",
+            "Qarsaa",
+            "Qarcaa"
+        ]
+    },
+    "periods": [
+        {
+            "gte": "2019-01-01T00:00:00Z",
+            "lte": "2020-01-01T00:00:00Z",
+            "resolution": "weekly"
+        }
+    ],
+    "parameters": [
+        {
+            "id": "123e4567-e89b-12d3-a456-426614174000",
+            "value": "irrig"
+        }
+    ]
+}

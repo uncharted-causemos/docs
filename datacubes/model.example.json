@@ -1,0 +1,134 @@
+{
+    "$schema": "./model.schema.json",
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "name": "DSSAT",
+    "description": "The Decision Support System for Agrotechnology Transfer (DSSAT) comprises dynamic crop growth simulation model for over 40 crops.",
+    "created": "1970-01-01T00:00:00Z",
+    "version": "1.2",
+    "status": "current",
+    "category": [
+        "Economic",
+        "Agricultural"
+    ],
+    "maintainer": {
+        "name": "Bob Fakename",
+        "organization": "University of Fakeland",
+        "email": "bob@fake.org",
+        "website": "http://www.fake.org/"
+    },
+    "image": "DSSAT:latest",
+    "type": "model",
+    "model_dependencies": [
+        "123e4567-e89b-12d3-a456-426614174000"
+    ],
+    "observed_data": [
+        "123e4567-e89b-12d3-a456-426614174000"
+    ],
+    "stochastic": false,
+    "cube_count": 2,
+    "tags": [
+        "Agriculture",
+        "DSSAT",
+        "Ethiopia",
+        "crop production"
+    ],
+    "geography": {
+        "country": [
+            "Ethiopia",
+            "South Sudan"
+        ],
+        "admin1": [
+            "Oromia",
+            "Sidama",
+            "Amhara"
+        ],
+        "admin2": [
+            "West Gojjam",
+            "East Gojjam",
+            "Agew Awi",
+            "Arsi",
+            "Bale",
+            "Borana"
+        ],
+        "admin3": [
+            "Aminyaa",
+            "Askoo",
+            "Coole",
+            "Galaanaa",
+            "Qarsaa",
+            "Qarcaa"
+        ]
+    },
+    "parameters": [
+        {
+            "id": "123e4567-e89b-12d3-a456-426614174000",
+            "name": "management_practice",
+            "display_name": "Management Practice",
+            "description": "The management practice to model. rf_highN corresponds to a high nitrogen management  practice. irrig corresponds to a high nitrogen, irrigated management practice. rf_0N  corresponds to a subsistence management practice. rf_lowN corresponds to a low nitrogen  managemet practice.",
+            "type": "str",
+            "unit_description": "Type of practice",
+            "concepts": [
+                {
+                    "name": "wm/concept/causal_factor/food_security/food_utilization",
+                    "score": 0.785829484462738
+                }
+            ],
+            "is_drilldown": true,
+            "additional_options": {},
+            "depends_on": {},
+            "data_type": "nominal",
+            "default": "irrig",
+            "tags": [
+                "agriculture",
+                "fertilizer"
+            ],
+            "choices": [
+                "irrig",
+                "rf_highN",
+                "rf_lowN",
+                "rf_0N"
+            ]
+        },
+        {
+            "id": "123e4567-e89b-12d3-a456-426614174001",
+            "name": "temperature",
+            "display_name": "Temperature",
+            "description": "The average outdoor temperature",
+            "type": "float",
+            "unit": "degC",
+            "unit_description": "degrees Celcius",
+            "concepts": [],
+            "is_drilldown": false,
+            "additional_options": {},
+            "depends_on": {},
+            "data_type": "numerical",
+            "default": 5,
+            "tags": [],
+            "min": 0,
+            "max": 10
+        }
+    ],
+    "outputs": [
+        {
+            "id": "123e4567-e89b-12d3-a456-426614174001",
+            "name": "yield",
+            "display_name": "Crop Yield",
+            "description": "The amount of crop harvested, by weight",
+            "unit": "kg",
+            "unit_description": "kilograms",
+            "concepts": [],
+            "additional_options": {},
+            "tags": [
+                "yield",
+                "crop yield"
+            ],
+            "data_resolution": {
+                "temporal_resolution": "weekly",
+                "spatial_resolution": [
+                    20,
+                    20
+                ]
+            }
+        }
+    ]
+}

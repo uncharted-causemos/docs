@@ -1,5 +1,5 @@
 {
-    "$id": "http://worldmodelers.com/cube-metadata.json",
+    "$id": "https://github.com/uncharted-causemos/docs/blob/model-schemas/datacubes/cube.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema",
     "description": "World Modelers Cube Metadata Schema",
     "required": [
@@ -17,7 +17,6 @@
     "properties": {
         "id": {
             "$id": "#/properties/id",
-            "default": "",
             "description": "A unique model id",
             "examples": [
                 "123e4567-e89b-12d3-a456-426614174000"
@@ -27,123 +26,122 @@
         },
         "name": {
             "$id": "#/properties/name",
-            "default": "",
+            "title": "Model Name",
             "description": "The model name",
+            "type": "string",
             "examples": [
                 "DSSAT"
-            ],
-            "title": "Model Name",
-            "type": "string"
+            ]
         },
         "description": {
             "$id": "#/properties/description",
-            "default": "",
+            "title": "Model Description",
             "description": "The description of the model.",
+            "type": "string",
             "examples": [
                 "The Decision Support System for Agrotechnology Transfer (DSSAT) comprises dynamic crop growth simulation model for over 40 crops. The model simulates growth development; and yield as a function of the soil-plant-atmosphere dynamics."
-            ],
-            "title": "Model Description",
-            "type": "string"
+            ]
         },
         "created": {
             "$id": "#/properties/created",
-            "default": "",
+            "title": "Model Registration Time",
             "description": "When the model was registered",
+            "type": "string",
             "examples": [
                 "1970-01-01T00:00:00Z"
-            ],
-            "title": "Model Registration Time",
-            "type": "string"
+            ]
         },
         "job_id": {
             "$id": "#/properties/job_id",
-            "default": "",
+            "title": "Job ID",
             "description": "SuperMaaS Job ID that executed this run",
+            "type": "string",
             "examples": [
                 "123e4567-e89b-12d3-a456-426614174000"
-            ],
-            "title": "Job ID",
-            "type": "string"
+            ]
         },
         "model_id": {
             "$id": "#/properties/model_id",
-            "default": "",
+            "title": "Model ID",
             "description": "The ID of the model that this run belongs to",
+            "type": "string",
+            "$ref": "./model.schema.json#/properties/id",
             "examples": [
                 "123e4567-e89b-12d3-a456-426614174000"
-            ],
-            "title": "Model ID",
-            "type": "string"
+            ]
         },
         "data_paths": {
             "$id": "#/properties/data_paths",
-            "type": "array",
             "title": "Data URL Paths",
             "description": "URL paths to output datacubes",
+            "type": "array",
             "items": {
-                "type": "string",
-                "examples": [
+                "type": "string"
+            },
+            "examples": [
+                [
                     "runs/<run-id>/<cube-id-1>",
                     "runs/<run-id>/<cube-id-2>"
                 ]
-            }
+            ]
         },
         "pre_gen_output_paths": {
             "$id": "#/properties/pre_gen_output_paths",
-            "type": "array",
             "title": "Pre-generated output URL Paths",
             "description": "URL paths to pre-generated output",
+            "type": "array",
             "items": {
-                "type": "string",
-                "examples": [
+                "type": "string"
+            },
+            "examples": [
+                [
                     "runs/<run-id>/<cube-id-1>/pre-gen"
                 ]
-            }
+            ]
         },
         "default_run": {
             "$id": "#/properties/default_run",
-            "type": "boolean",
             "title": "Default Run?",
             "description": "Is this the default run of the model",
-            "default": "false"
+            "type": "boolean",
+            "default": false
         },
         "parameters": {
             "$id": "#/properties/parameters",
-            "type": "array",
             "title": "Model Parameters",
             "description": "The parameters exposed for the model",
+            "type": "array",
             "items": {
                 "$ref": "#/definitions/parameter"
             }
         },
         "periods": {
             "$id": "#/properties/periods",
-            "type": "array",
             "title": "Cube time periods",
             "description": "Data ranges covered by the cube",
+            "type": "array",
             "items": {
-                "type": "array",
-                "items": {
-                    "$ref": "#/definitions/period"
-                }
+                "$ref": "#/definitions/period"
             }
         },
         "tags": {
             "$id": "#/properties/tags",
-            "type": "array",
             "title": "Model Tags",
             "description": "The tags associated with the model.",
+            "type": "array",
             "items": {
-                "type": "string",
-                "examples": [
+                "type": "string"
+            },
+            "examples": [
+                [
                     "Agriculture"
                 ]
-            }
+            ]
         },
         "geography": {
             "$id": "#/properties/geography",
-            "description": "Information about the geography covered by the cube",
             "title": "Geography",
+            "description": "Information about the geography covered by the cube",
             "$ref": "#/definitions/geography"
         }
     },
@@ -155,19 +153,18 @@
             "properties": {
                 "id": {
                     "$id": "#/definitions/parameter/id",
-                    "type": "string",
                     "title": "Parameter ID",
                     "description": "The ID of the parameter",
-                    "default": "",
+                    "type": "string",
                     "examples": [
                         "123e4567-e89b-12d3-a456-426614174000"
                     ]
                 },
                 "value": {
                     "$id": "#/definitions/parameter/default",
-                    "type": "string",
                     "title": "Parameter Value",
                     "description": "Set value of parameter during run",
+                    "type": "string",
                     "examples": [
                         "irrig"
                     ]
@@ -177,38 +174,36 @@
         },
         "period": {
             "$id": "#/definitions/period",
-            "type": "object",
             "title": "Date Range",
             "description": "Date range and resolution",
+            "type": "object",
             "properties": {
                 "gte": {
                     "$id": "#/definition/output/gte",
-                    "type": "string",
                     "title": "Start Time",
                     "description": "Start Time (inclusive)",
+                    "type": "string",
                     "examples": [
                         "1970-01-01T00:00:00Z"
                     ]
                 },
                 "lte": {
                     "$id": "#/definition/output/lte",
-                    "type": "string",
                     "title": "End Time",
                     "description": "End Time (inclusive)",
-                    "default": "",
+                    "type": "string",
                     "examples": [
                         "2020-01-01T00:00:00Z"
                     ]
                 },
                 "resolution": {
                     "$id": "#/definition/output/resolution",
-                    "default": "",
                     "title": "Temporal Resolution",
                     "description": "Temporal resolution",
                     "enum": [
                         "annual",
                         "monthly",
-                        "dcad",
+                        "dekad",
                         "weekly",
                         "daily",
                         "other"
@@ -224,9 +219,12 @@
             "properties": {
                 "country": {
                     "$id": "#/definitions/geography/properties/country",
-                    "type": "array",
                     "title": "Countries",
                     "description": "List of countries covered by the model",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
                     "examples": [
                         [
                             "Ethiopia",
@@ -236,29 +234,56 @@
                 },
                 "admin1": {
                     "$id": "#/definitions/geography/properties/admin1",
-                    "type": "array",
                     "title": "Admin Level 1",
                     "description": "List of admin level 1 regions covered by the model",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
                     "examples": [
-                        []
+                        [
+                            "Oromia",
+                            "Sidama",
+                            "Amhara"
+                        ]
                     ]
                 },
                 "admin2": {
                     "$id": "#/definitions/geography/properties/admin2",
-                    "type": "array",
                     "title": "Admin Level 2",
                     "description": "List of admin level 2 regions covered by the model",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
                     "examples": [
-                        []
+                        [
+                            "West Gojjam",
+                            "East Gojjam",
+                            "Agew Awi",
+                            "Arsi",
+                            "Bale",
+                            "Borana"
+                        ]
                     ]
                 },
                 "admin3": {
                     "$id": "#/definitions/geography/properties/admin3",
-                    "type": "array",
                     "title": "Admin Level 3",
                     "description": "List of admin level 3 regions covered by the model",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
                     "examples": [
-                        []
+                        [
+                            "Aminyaa",
+                            "Askoo",
+                            "Coole",
+                            "Galaanaa",
+                            "Qarsaa",
+                            "Qarcaa"
+                        ]
                     ]
                 }
             },

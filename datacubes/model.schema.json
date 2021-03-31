@@ -1,5 +1,5 @@
 {
-   "$id": "http://worldmodelers.com/model-metadata.json",
+   "$id": "https://github.com/uncharted-causemos/docs/blob/model-schemas/datacubes/model.schema.json",
    "$schema": "http://json-schema.org/draft-07/schema",
    "description": "World Modelers Model Metadata Schema",
    "required": [
@@ -18,59 +18,53 @@
    "properties": {
       "id": {
          "$id": "#/properties/id",
-         "default": "",
+         "title": "Model ID",
          "description": "A unique model id",
+         "type": "string",
          "examples": [
             "123e4567-e89b-12d3-a456-426614174000"
-         ],
-         "title": "Model ID",
-         "type": "string"
+         ]
       },
       "name": {
          "$id": "#/properties/name",
-         "default": "",
+         "title": "Model Name",
          "description": "The model name",
+         "type": "string",
          "examples": [
             "DSSAT"
-         ],
-         "title": "Model Name",
-         "type": "string"
+         ]
       },
       "description": {
          "$id": "#/properties/description",
-         "default": "",
+         "title": "Model Description",
          "description": "The description of the model.",
+         "type": "string",
          "examples": [
             "The Decision Support System for Agrotechnology Transfer (DSSAT) comprises dynamic crop growth simulation model for over 40 crops. The model simulates growth development; and yield as a function of the soil-plant-atmosphere dynamics."
-         ],
-         "title": "Model Description",
-         "type": "string"
+         ]
       },
       "created": {
          "$id": "#/properties/created",
-         "default": "",
+         "title": "Model Registration Time",
          "description": "When the model was registered",
+         "type": "string",
          "examples": [
             "1970-01-01T00:00:00Z"
-         ],
-         "title": "Model Registration Time",
-         "type": "string"
+         ]
       },
       "version": {
          "$id": "#/properties/version",
-         "default": "",
+         "title": "Model Version",
          "description": "Version of model used",
+         "type": "string",
          "examples": [
             "1.2"
-         ],
-         "title": "Model Version",
-         "type": "string"
+         ]
       },
       "status": {
          "$id": "#/properties/status",
-         "default": "",
-         "description": "Current status of the model",
          "title": "Model Status",
+         "description": "Current status of the model",
          "enum": [
             "current",
             "faulty",
@@ -81,116 +75,114 @@
       },
       "category": {
          "$id": "#/properties/category",
-         "type": "array",
          "title": "Categories",
          "description": "List of categories",
+         "type": "array",
+         "items": {
+            "$id": "#/definitions/parameter/tags/items",
+            "type": "string"
+         },
          "examples": [
             [
                "Economic",
                "Agricultural"
             ]
-         ],
-         "items": {
-            "$id": "#/definitions/parameter/tags/items",
-            "type": "string"
-         }
+         ]
       },
       "maintainer": {
          "$id": "#/properties/maintainer",
-         "description": "Information about the model maintainer.",
          "title": "Model Maintainer",
+         "description": "Information about the model maintainer.",
          "$ref": "#/definitions/maintainer",
          "additionalProperties": true
       },
       "image": {
          "$id": "#/properties/image",
-         "type": "string",
          "title": "Container Image",
          "description": "The name and tag of the model container image (on Dockerhub, etc.)",
-         "default": "",
+         "type": "string",
          "examples": [
             "DSSAT:latest"
          ]
       },
       "type": {
          "$id": "#/properties/type",
-         "default": "model",
-         "description": "Does this represent a bottom-up model or an indicator",
          "title": "Model Type",
+         "description": "Does this represent a bottom-up model or an indicator",
          "enum": [
             "model",
             "indicator"
-         ]
+         ],
+         "default": "model"
       },
       "model_dependencies": {
          "$id": "#/properties/model_dependencies",
-         "type": "array",
          "title": "Model Dependencies",
          "description": "A list of Model IDs that are required in order to run this model",
+         "type": "array",
          "items": {
             "$ref": "#/properties/id"
          }
       },
       "observed_data": {
          "$id": "#/properties/observed_data",
-         "type": "array",
          "title": "Observed Data",
          "description": "A list of Cube IDs that represent observed data for this model",
+         "type": "array",
          "items": {
-            "$ref": "http://worldmodelers.com/cube-metadata.json#/properties/id"
+            "$ref": "./cube.schema.json#/properties/id"
          }
       },
       "stochastic": {
          "$id": "#/properties/stochastic",
-         "type": "boolean",
          "title": "Stochastic?",
          "description": "Is the model stochastic",
-         "default": "false"
+         "type": "boolean",
+         "default": false
       },
       "cube_count": {
          "$id": "#/properties/stochastic",
-         "type": "integer",
          "title": "Cube Count",
          "description": "How many data cubes each job of the model produces",
+         "type": "integer",
          "default": 1
       },
       "parameters": {
          "$id": "#/properties/parameters",
-         "type": "array",
          "title": "Model Parameters",
          "description": "The parameters exposed for the model",
+         "type": "array",
          "items": {
             "$ref": "#/definitions/parameter"
          }
       },
       "outputs": {
          "$id": "#/properties/outputs",
-         "type": "array",
          "title": "Model Outputs",
          "description": "An array of model outputs",
+         "type": "array",
          "items": {
-            "type": "array",
-            "items": {
-               "$ref": "#/definitions/output"
-            }
+            "$ref": "#/definitions/output"
          }
       },
       "tags": {
          "$id": "#/properties/tags",
-         "type": "array",
          "title": "Model Tags",
          "description": "The tags associated with the model.",
+         "type": "array",
          "items": {
-            "type": "string",
-            "examples": [
+            "type": "string"
+         },
+         "examples": [
+            [
                "Agriculture"
             ]
-         }
+         ]
       },
       "geography": {
          "$id": "#/properties/geography",
-         "description": "Information about the geography covered by the model",
          "title": "Geography",
+         "description": "Information about the geography covered by the model",
          "$ref": "#/definitions/geography"
       }
    },
@@ -211,47 +203,42 @@
          "properties": {
             "id": {
                "$id": "#/definitions/parameter/id",
-               "type": "string",
                "title": "Parameter ID",
                "description": "The ID of the parameter",
-               "default": "",
+               "type": "string",
                "examples": [
                   "123e4567-e89b-12d3-a456-426614174000"
                ]
             },
             "name": {
                "$id": "#/definitions/parameter/name",
-               "type": "string",
                "title": "Parameter Name",
                "description": "The name of the parameter",
-               "default": "",
+               "type": "string",
                "examples": [
                   "management_practice"
                ]
             },
             "display_name": {
                "$id": "#/definitions/parameter/display_name",
-               "type": "string",
                "title": "Parameter Display Name",
                "description": "The user visible name of the parameter",
-               "default": "",
+               "type": "string",
                "examples": [
                   "Management Practice"
                ]
             },
             "description": {
                "$id": "#/definitions/parameter/description",
-               "type": "string",
                "title": "Parameter Description",
                "description": "The description of the parameter",
-               "default": "",
+               "type": "string",
                "examples": [
                   "The management practice to model. rf_highN corresponds to a high nitrogen management  practice. irrig corresponds to a high nitrogen, irrigated management practice. rf_0N  corresponds to a subsistence management practice. rf_lowN corresponds to a low nitrogen  managemet practice."
                ]
             },
             "type": {
                "$id": "#/definitions/parameter/type",
-               "type": "string",
                "title": "Parameter Type",
                "description": "The type of parameter",
                "enum": [
@@ -265,67 +252,60 @@
                   "binary",
                   "boolean",
                   "datacube"
-               ],
-               "examples": [
-                  "str"
                ]
             },
             "unit": {
                "$id": "#/definitions/parameter/unit",
-               "type": "string",
                "title": "Unit",
                "description": "The unit of the parameter value",
-               "default": "",
+               "type": "string",
                "examples": [
                   "degC"
                ]
             },
             "unit_description": {
                "$id": "#/definitions/parameter/unit_description",
-               "type": "string",
                "title": "Unit Description",
                "description": "A short description of the unit",
-               "default": "",
+               "type": "string",
                "examples": [
                   "degrees Celcius"
                ]
             },
             "concepts": {
                "$id": "#/definitions/parameter/concepts",
-               "type": "array",
                "title": "Concept Matches",
                "description": "A list of concepts matched to this varible",
+               "type": "array",
                "items": {
                   "$ref": "#/definitions/concept"
                }
             },
             "is_drilldown": {
                "$id": "#/definitions/parameter/is_drilldown",
-               "type": "boolean",
                "title": "Is Drilldown?",
                "description": "Does this variable represent a drilldown",
-               "default": "",
+               "type": "boolean",
                "examples": [
                   true
                ]
             },
             "additional_options": {
                "$id": "#/definitions/parameter/additional_options",
-               "type": "object",
                "title": "Additional Options",
                "description": "Model specific extras",
+               "type": "object",
                "additionalProperties": true
             },
             "depends_on": {
                "$id": "#/definitions/parameter/depends_on",
-               "type": "object",
                "title": "Parameter Dependencies",
                "description": "Specifies dependencies on other parameters",
+               "type": "object",
                "additionalProperties": true
             },
             "data_type": {
                "$id": "#/definitions/parameter/data_type",
-               "default": "",
                "title": "Data Value Type",
                "description": "Describes whether the data values will be categorical, ordered, or numerical",
                "enum": [
@@ -336,28 +316,29 @@
             },
             "default": {
                "$id": "#/definitions/parameter/default",
-               "type": "string",
                "title": "Default Parameter Value",
                "description": "The default value of the parameter",
                "examples": [
-                  "irrig"
+                  "irrig",
+                  5,
+                  [44, 32]
                ]
             },
             "tags": {
                "$id": "#/definitions/parameter/tags",
-               "type": "array",
                "title": "Parameter Tags",
                "description": "An array of tags associated with the parameter",
+               "type": "array",
+               "items": {
+                  "$id": "#/definitions/parameter/tags/items",
+                  "type": "string"
+               },
                "examples": [
                   [
                      "agriculture",
                      "fertilizer"
                   ]
-               ],
-               "items": {
-                  "$id": "#/definitions/parameter/tags/items",
-                  "type": "string"
-               }
+               ]
             }
          },
          "additionalProperties": true,
@@ -374,9 +355,12 @@
                   "properties": {
                      "choices": {
                         "$id": "#/definitions/parameter/choices",
-                        "type": "array",
                         "title": "Parameter Choices",
                         "description": "If the parameter is a string type, then enumerate the choices for that parameter",
+                        "type": "array",
+                        "items": {
+                           "type": "string"
+                        },
                         "examples": [
                            [
                               "irrig",
@@ -405,18 +389,18 @@
                   "properties": {
                      "min": {
                         "$id": "#/definitions/parameter/min",
-                        "type": "number",
                         "title": "Parameter Min",
                         "description": "Inclusive min of parameter values",
+                        "type": "number",
                         "examples": [
                            5
                         ]
                      },
                      "max": {
                         "$id": "#/definitions/parameter/max",
-                        "type": "number",
                         "title": "Parameter Max",
                         "description": "Inclusive max of parameter values",
+                        "type": "number",
                         "examples": [
                            10
                         ]
@@ -436,9 +420,12 @@
                   "properties": {
                      "boundary": {
                         "$id": "#/definitions/parameter/boundary",
-                        "type": "array",
                         "title": "Parameter Geographic Boundary",
                         "description": "LongLat points that bound the geographic area",
+                        "type": "array",
+                        "items": {
+                           "type": "number"
+                        },
                         "examples": [
                            [
                               [
@@ -478,47 +465,42 @@
          "properties": {
             "id": {
                "$id": "#/definitions/output/id",
-               "type": "string",
                "title": "Parameter ID",
                "description": "The ID of the parameter",
-               "default": "",
+               "type": "string",
                "examples": [
                   "123e4567-e89b-12d3-a456-426614174000"
                ]
             },
             "name": {
                "$id": "#/definitions/output/name",
-               "type": "string",
                "title": "Parameter Name",
                "description": "The name of the parameter",
-               "default": "",
+               "type": "string",
                "examples": [
                   "management_practice"
                ]
             },
             "display_name": {
                "$id": "#/definitions/output/display_name",
-               "type": "string",
                "title": "Parameter Display Name",
                "description": "The user visible name of the parameter",
-               "default": "",
+               "type": "string",
                "examples": [
                   "Management Practice"
                ]
             },
             "description": {
                "$id": "#/definitions/output/description",
-               "type": "string",
                "title": "Parameter Description",
                "description": "The description of the parameter",
-               "default": "",
+               "type": "string",
                "examples": [
                   "The management practice to model. rf_highN corresponds to a high nitrogen management  practice. irrig corresponds to a high nitrogen, irrigated management practice. rf_0N  corresponds to a subsistence management practice. rf_lowN corresponds to a low nitrogen  managemet practice."
                ]
             },
             "type": {
                "$id": "#/definitions/output/type",
-               "type": "string",
                "title": "Parameter Type",
                "description": "The type of parameter",
                "enum": [
@@ -532,66 +514,60 @@
                   "binary",
                   "boolean",
                   "datacube"
-               ],
-               "examples": [
-                  "str"
                ]
             },
             "unit": {
                "$id": "#/definitions/output/unit",
-               "type": "string",
                "title": "Unit",
                "description": "The unit of the parameter value",
-               "default": "",
+               "type": "string",
                "examples": [
                   "degC"
                ]
             },
             "unit_description": {
                "$id": "#/definitions/output/unit_description",
-               "type": "string",
                "title": "Unit Description",
                "description": "A short description of the unit",
-               "default": "",
+               "type": "string",
                "examples": [
                   "degrees Celcius"
                ]
             },
             "concepts": {
                "$id": "#/definitions/output/concepts",
-               "type": "array",
                "title": "Concept Matches",
                "description": "A list of concepts matched to this varible",
+               "type": "array",
                "items": {
                   "$ref": "#/definitions/concept"
                }
             },
             "additional_options": {
                "$id": "#/definitions/output/additional_options",
-               "type": "object",
                "title": "Additional Options",
                "description": "Model specific extras",
+               "type": "object",
                "additionalProperties": true
             },
             "tags": {
                "$id": "#/definitions/output/tags",
-               "type": "array",
                "title": "Parameter Tags",
                "description": "An array of tags associated with the parameter",
+               "type": "array",
+               "items": {
+                  "$id": "#/definitions/output/tags/items",
+                  "type": "string"
+               },
                "examples": [
                   [
                      "agriculture",
                      "fertilizer"
                   ]
-               ],
-               "items": {
-                  "$id": "#/definitions/output/tags/items",
-                  "type": "string"
-               }
+               ]
             },
             "data_resolution": {
                "$id": "#/definitions/output/data_resolution",
-               "type": "object",
                "title": "Data Resolution",
                "description": "Spatial and temporal resolution of the data",
                "$ref": "#/definitions/output/definitions/resolution"
@@ -611,9 +587,12 @@
                   "properties": {
                      "choices": {
                         "$id": "#/definitions/output/choices",
-                        "type": "array",
                         "title": "Parameter Choices",
                         "description": "If the parameter is a string type, then enumerate the choices for that parameter",
+                        "type": "array",
+                        "items": {
+                           "type": "string"
+                        },
                         "examples": [
                            [
                                  "irrig",
@@ -642,18 +621,18 @@
                   "properties": {
                      "min": {
                         "$id": "#/definitions/output/min",
-                        "type": "number",
                         "title": "Parameter Min",
                         "description": "Inclusive min of parameter values",
+                        "type": "number",
                         "examples": [
                            5
                         ]
                      },
                      "max": {
                         "$id": "#/definitions/output/max",
-                        "type": "number",
                         "title": "Parameter Max",
                         "description": "Inclusive max of parameter values",
+                        "type": "number",
                         "examples": [
                            10
                         ]
@@ -673,9 +652,12 @@
                   "properties": {
                      "boundary": {
                         "$id": "#/definitions/output/boundary",
-                        "type": "array",
                         "title": "Parameter Geographic Boundary",
                         "description": "LongLat points that bound the geographic area",
+                        "type": "array",
+                        "items": {
+                           "type": "number"
+                        },
                         "examples": [
                            [
                               [
@@ -708,13 +690,12 @@
                "properties": {
                   "temporal_resolution": {
                      "$id": "#/definitions/output/definitions/resolution/temporal_resolution",
-                     "default": "",
                      "title": "Temporal Resolution",
                      "description": "Temporal resolution of the output",
                      "enum": [
                         "annual",
                         "monthly",
-                        "dcad",
+                        "dekad",
                         "weekly",
                         "daily",
                         "other"
@@ -722,15 +703,14 @@
                   },
                   "spatial_resolution": {
                      "$id": "#/definitions/output/definitions/resolution/spatial_resolution",
-                     "type": "array",
                      "title": "Spatial Resolution",
                      "description": "Spatial resolution of the output (in meters)",
-                     "default": "",
-                     "minItems": 2,
-                     "maxItems": 2,
+                     "type": "array",
                      "items": {
                         "type": "number"
                      },
+                     "minItems": 2,
+                     "maxItems": 2,
                      "examples": [
                         [
                            20,
@@ -752,43 +732,39 @@
          "properties": {
             "name": {
                "$id": "#/definitions/maintainer/properties/name",
-               "default": "",
-               "description": "The full name of the model maintainer",
-               "examples": [
-                  "Cheryl Porter"
-               ],
                "title": "Model Maintainer Name",
-               "type": "string"
+               "description": "The full name of the model maintainer",
+               "type": "string",
+               "examples": [
+                  "Bob Fakename"
+               ]
             },
             "email": {
                "$id": "#/definitions/maintainer/properties/email",
-               "default": "",
-               "description": "Email address of the model maintainer",
-               "examples": [
-                  "cporter@ufl.edu"
-               ],
                "title": "Model Maintainer Email Address",
-               "type": "string"
+               "description": "Email address of the model maintainer",
+               "type": "string",
+               "examples": [
+                  "bob@fake.org"
+               ]
             },
             "organization": {
                "$id": "#/definitions/maintainer/properties/organization",
-               "default": "",
-               "description": "Maintainer Organization",
-               "examples": [
-                  "University of Florida"
-               ],
                "title": "Model Maintainer Organization",
-               "type": "string"
+               "description": "Maintainer Organization",
+               "type": "string",
+               "examples": [
+                  "University of Fakeland"
+               ]
             },
             "website": {
                "$id": "#/definitions/maintainer/properties/website",
-               "default": "",
-               "description": "Model maintainer website",
-               "examples": [
-                  "http://www.ufl.edu/"
-               ],
                "title": "Model Maintainer Website",
-               "type": "string"
+               "description": "Model maintainer website",
+               "type": "string",
+               "examples": [
+                  "http://www.fake.org/"
+               ]
             }
          },
          "additionalProperties": true
@@ -798,43 +774,73 @@
          "type": "object",
          "properties": {
             "country": {
-               "$id": "#/definitions/geography/properties/country",
-               "type": "array",
-               "title": "Countries",
-               "description": "List of countries covered by the model",
-               "examples": [
-                  [
-                     "Ethiopia",
-                     "South Sudan"
-                  ]
-               ]
+                "$id": "#/definitions/geography/properties/country",
+                "title": "Countries",
+                "description": "List of countries covered by the model",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "examples": [
+                    [
+                        "Ethiopia",
+                        "South Sudan"
+                    ]
+                ]
             },
             "admin1": {
-               "$id": "#/definitions/geography/properties/admin1",
-               "type": "array",
-               "title": "Admin Level 1",
-               "description": "List of admin level 1 regions covered by the model",
-               "examples": [
-                  []
-               ]
+                "$id": "#/definitions/geography/properties/admin1",
+                "title": "Admin Level 1",
+                "description": "List of admin level 1 regions covered by the model",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "examples": [
+                    [
+                        "Oromia",
+                        "Sidama",
+                        "Amhara"
+                    ]
+                ]
             },
             "admin2": {
-               "$id": "#/definitions/geography/properties/admin2",
-               "type": "array",
-               "title": "Admin Level 2",
-               "description": "List of admin level 2 regions covered by the model",
-               "examples": [
-                  []
-               ]
+                "$id": "#/definitions/geography/properties/admin2",
+                "title": "Admin Level 2",
+                "description": "List of admin level 2 regions covered by the model",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "examples": [
+                    [
+                        "West Gojjam",
+                        "East Gojjam",
+                        "Agew Awi",
+                        "Arsi",
+                        "Bale",
+                        "Borana"
+                    ]
+                ]
             },
             "admin3": {
-               "$id": "#/definitions/geography/properties/admin3",
-               "type": "array",
-               "title": "Admin Level 3",
-               "description": "List of admin level 3 regions covered by the model",
-               "examples": [
-                  []
-               ]
+                "$id": "#/definitions/geography/properties/admin3",
+                "title": "Admin Level 3",
+                "description": "List of admin level 3 regions covered by the model",
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "examples": [
+                    [
+                        "Aminyaa",
+                        "Askoo",
+                        "Coole",
+                        "Galaanaa",
+                        "Qarsaa",
+                        "Qarcaa"
+                    ]
+                ]
             }
          },
          "additionalProperties": true
@@ -845,20 +851,18 @@
          "properties": {
             "name": {
                "$id": "#/definitions/concept/name",
-               "type": "string",
                "title": "Concept Name",
                "description": "The name of the concept in the ontology",
-               "default": "",
+               "type": "string",
                "examples": [
                   "wm/concept/causal_factor/food_security/food_utilization"
                ]
             },
             "score": {
                "$id": "#/definitions/concept/score",
-               "type": "number",
                "title": "Match Score",
                "description": "A score between 0 and 1 representing the strength of the match",
-               "default": "",
+               "type": "number",
                "examples": [
                   0.785829484462738
                ]
