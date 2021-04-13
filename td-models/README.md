@@ -6,11 +6,11 @@ Integration and completion status with respect to api spec.
 | End point      | DySE           | Delphi  |
 | ------------- |-------------| -----|
 | POST /create-model | :white_check_mark: | :white_check_mark: |
-| GET /models/:modelId | :question: | :white_check_mark: |
+| GET /models/:modelId | :white_check_mark: | :white_check_mark: |
 | POST /models/:modelId/experiments | :white_check_mark: | :white_check_mark: |
 | GET /models/:modelId/experiments/:experimentId | :white_check_mark: | :white_check_mark: |
 | POST /models/:modelId/edit-indicators | :white_check_mark: | :question: |
-| POST /models/:modelId/edit-edges | :construction: | :question: |
+| POST /models/:modelId/edit-edges | :white_check_mark: | :question: |
 
 
 ### Experiment types
