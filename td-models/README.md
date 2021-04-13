@@ -6,7 +6,7 @@ Integration and completion status with respect to api spec.
 | End point      | DySE           | Delphi  |
 | ------------- |-------------| -----|
 | POST /create-model | :white_check_mark: | :white_check_mark: |
-| GET /models/:modelId | :question: | :question: |
+| GET /models/:modelId | :question: | :white_check_mark: |
 | POST /models/:modelId/experiments | :white_check_mark: | :white_check_mark: |
 | GET /models/:modelId/experiments/:experimentId | :white_check_mark: | :white_check_mark: |
 | POST /models/:modelId/edit-indicators | :white_check_mark: | :question: |
@@ -16,7 +16,7 @@ Integration and completion status with respect to api spec.
 ### Experiment types
 | Experiment type      | DySE           | Delphi  | Causemos (UI/interaction) |
 | ------------- |-------------| -----| ---- |
-| Projection | :white_check_mark: | :construction: | :white_check_mark: |
+| Projection | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Sensitivity | :white_check_mark: | :question: | :white_check_mark: :construction: |
 | Goal optimizaiton | :white_check_mark: | :question: | :question: |
 | Validation | :white_check_mark: | :question: | :question: |
