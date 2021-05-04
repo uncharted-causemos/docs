@@ -11,7 +11,7 @@
     "pre_gen_output_paths": [
         "runs/<run-id>/<cube-id-1>/pre-gen"
     ],
-    "default_run": false,
+    "is_default_run": false,
     "tags": [
         "Agriculture",
         "DSSAT",

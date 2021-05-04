@@ -80,8 +80,8 @@
                 ]
             ]
         },
-        "default_run": {
-            "$id": "#/properties/default_run",
+        "is_default_run": {
+            "$id": "#/properties/is_default_run",
             "title": "Default Run?",
             "description": "Is this the default run of the model",
             "type": "boolean",
