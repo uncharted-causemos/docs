@@ -16,11 +16,11 @@
     "properties": {
         "id": {
             "$id": "#/properties/id",
-            "description": "A unique model id",
+            "description": "A unique model run id",
             "examples": [
                 "123e4567-e89b-12d3-a456-426614174000"
             ],
-            "title": "Model ID",
+            "title": "Run ID",
             "type": "string"
         },
         "model_name": {
@@ -44,8 +44,8 @@
         },
         "created_at": {
             "$id": "#/properties/created_at",
-            "title": "Model Registration Time",
-            "description": "When the model was registered",
+            "title": "Run Creation Time",
+            "description": "When the model run was started",
             "type": "string",
             "examples": [
                 "1970-01-01T00:00:00Z"
@@ -53,8 +53,8 @@
         },
         "data_paths": {
             "$id": "#/properties/data_paths",
-            "title": "Data URL Paths",
-            "description": "URL paths to output datacubes",
+            "title": "Data Path URLs",
+            "description": "URL paths to output model run data",
             "type": "array",
             "items": {
                 "type": "string"
@@ -68,7 +68,7 @@
         },
         "pre_gen_output_paths": {
             "$id": "#/properties/pre_gen_output_paths",
-            "title": "Pre-generated output URL Paths",
+            "title": "Pre-generated Output Path URLs",
             "description": "URL paths to pre-generated output",
             "type": "array",
             "items": {
@@ -98,8 +98,8 @@
         },
         "tags": {
             "$id": "#/properties/tags",
-            "title": "Model Tags",
-            "description": "The tags associated with the model.",
+            "title": "Model Run Tags",
+            "description": "The tags associated with the model run",
             "type": "array",
             "items": {
                 "type": "string"
