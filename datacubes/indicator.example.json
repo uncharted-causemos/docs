@@ -58,30 +58,24 @@
             "description": "SOURCE NOTE: Account denotes the percentage of respondents who report having an account (by themselves or together with someone else) at a bank or another type of financial institution or report personally using a mobile money service in the past 12 months (older adults, % of population ages 25+).\\nSOURCE ORGANIZATION: Demirguc-Kunt et al., 2018, Global Financial Inclusion Database, World Bank.",
             "unit": "unitless",
             "unit_description": "",
-            "concepts": {
-                "concepts": [
+            "concepts": [
+                [
                     {
                         "name": "wm/concept/humanitarian_assistance/food_aid",
                         "score": 0.785829484462738
-                    }
-                ],
-                "processes": [
+                    },
                     {
                         "name": "wm/process/train/agriculture_training",
                         "score": 0.5917248129844666
-                    }],
-                "properties": [
+                    },
                     {
                         "name": "wm/property/condition",
                         "score": 0.6441149115562439
-                    }]
-            },
-            "data_resolution": {
-                "temporal_resolution": "weekly",
-                "spatial_resolution": [
-                    20,
-                    20
+                    }
                 ]
+            ],
+            "data_resolution": {
+                "temporal_resolution": "weekly"
             }
         }
     ]

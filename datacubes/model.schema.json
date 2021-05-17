@@ -219,7 +219,10 @@
                "$id": "#/definitions/parameter/concepts",
                "title": "Concept Matches",
                "description": "A list of concepts matched to this varible",
-               "$ref": "#/definitions/concept_components"
+               "type": "array",
+               "items": {
+                  "$ref": "#/definitions/concept_components"
+               }
             },
             "is_drilldown": {
                "$id": "#/definitions/parameter/is_drilldown",
@@ -380,7 +383,10 @@
                "$id": "#/definitions/output/concepts",
                "title": "Concept Matches",
                "description": "A list of concepts matched to this varible",
-               "$ref": "#/definitions/concept_components"
+               "type": "array",
+               "items": {
+                  "$ref": "#/definitions/concept_components"
+               }
             },
             "additional_options": {
                "$id": "#/definitions/output/additional_options",
@@ -641,40 +647,11 @@
       },
       "concept_components": {
          "$id": "#/definitions/concept_components",
-         "type": "object",
-         "required": [
-             "concepts",
-             "processes",
-             "properties"
-         ],
-         "properties": {
-            "concepts": {
-               "$id": "#/definitions/concept_components/concepts",
-               "title": "Matched concepts",
-               "description": "A list of concepts matched for this variable",
-               "type": "array",
-               "items": {
-                  "$ref": "#/definitions/concept_match"
-               }
-            },
-            "processes": {
-               "$id": "#/definitions/concept_components/processes",
-               "title": "Matched Processes",
-               "description": "A list of processes matched for this variable",
-               "type": "array",
-               "items": {
-                  "$ref": "#/definitions/concept_match"
-               }
-            },
-            "properties": {
-               "$id": "#/definitions/concept_components/properties",
-               "title": "Matched Properties",
-               "description": "A list of properties matched for this variable",
-               "type": "array",
-               "items": {
-                  "$ref": "#/definitions/concept_match"
-               }
-            }
+         "title": "Concept Components",
+         "description": "A list of matched concepts, processes, and properties",
+         "type": "array",
+         "items": {
+            "$ref": "#/definitions/concept_match"
          }
       },
       "concept_match": {
@@ -687,7 +664,9 @@
                "description": "The name of the concept component in the ontology",
                "type": "string",
                "examples": [
-                  "wm/concept/humanitarian_assistance/food_aid"
+                  "wm/concept/humanitarian_assistance/food_aid",
+                  "wm/process/train/agriculture_training",
+                  "wm/property/condition"
                ]
             },
             "score": {
