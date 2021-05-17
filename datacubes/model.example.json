@@ -63,22 +63,24 @@
             "description": "The management practice to model. rf_highN corresponds to a high nitrogen management  practice. irrig corresponds to a high nitrogen, irrigated management practice. rf_0N  corresponds to a subsistence management practice. rf_lowN corresponds to a low nitrogen  managemet practice.",
             "type": "str",
             "unit_description": "Type of practice",
-            "concepts": [
-                [
+            "concepts": {
+                "concepts": [
                     {
                         "name": "wm/concept/humanitarian_assistance/food_aid",
                         "score": 0.785829484462738
-                    },
+                    }
+                ],
+                "processes": [
                     {
                         "name": "wm/process/train/agriculture_training",
                         "score": 0.5917248129844666
-                    },
+                    }],
+                "properties": [
                     {
                         "name": "wm/property/condition",
                         "score": 0.6441149115562439
-                    }
-                ]
-            ],
+                    }]
+            },
             "is_drilldown": true,
             "additional_options": {},
             "data_type": "nominal",
@@ -101,8 +103,11 @@
             "type": "float",
             "unit": "degC",
             "unit_description": "degrees Celcius",
-            "concepts": [
-            ],
+            "concepts": {
+                "concepts": [],
+                "processes": [],
+                "properties": []
+            },
             "is_drilldown": false,
             "additional_options": {},
             "data_type": "numerical",
@@ -120,8 +125,11 @@
             "type": "float",
             "unit": "kg",
             "unit_description": "kilograms",
-            "concepts": [
-            ],
+            "concepts": {
+                "concepts": [],
+                "processes": [],
+                "properties": []
+            },
             "additional_options": {},
             "tags": [
                 "yield",

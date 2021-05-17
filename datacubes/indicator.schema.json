@@ -185,10 +185,7 @@
                "$id": "#/definitions/output/concepts",
                "title": "Concept Matches",
                "description": "A list of concepts matched to this varible",
-               "type": "array",
-               "items": {
-                  "$ref": "#/definitions/concept_components"
-               }
+               "$ref": "#/definitions/concept_components"
             },
             "data_resolution": {
                "$id": "#/definitions/output/data_resolution",
@@ -393,11 +390,35 @@
       },
       "concept_components": {
          "$id": "#/definitions/concept_components",
-         "title": "Concept Components",
-         "description": "A list of matched concepts, processes, and properties",
-         "type": "array",
-         "items": {
-            "$ref": "#/definitions/concept_match"
+         "type": "object",
+         "properties": {
+            "concepts": {
+               "$id": "#/definitions/concept_components/concepts",
+               "title": "Matched concepts",
+               "description": "A list of concepts matched for this variable",
+               "type": "array",
+               "items": {
+                  "$ref": "#/definitions/concept_match"
+               }
+            },
+            "processes": {
+               "$id": "#/definitions/concept_components/processes",
+               "title": "Matched Processes",
+               "description": "A list of processes matched for this variable",
+               "type": "array",
+               "items": {
+                  "$ref": "#/definitions/concept_match"
+               }
+            },
+            "properties": {
+               "$id": "#/definitions/concept_components/properties",
+               "title": "Matched Properties",
+               "description": "A list of properties matched for this variable",
+               "type": "array",
+               "items": {
+                  "$ref": "#/definitions/concept_match"
+               }
+            }
          }
       },
       "concept_match": {
@@ -410,9 +431,7 @@
                "description": "The name of the concept component in the ontology",
                "type": "string",
                "examples": [
-                  "wm/concept/humanitarian_assistance/food_aid",
-                  "wm/process/train/agriculture_training",
-                  "wm/property/condition"
+                  "wm/concept/humanitarian_assistance/food_aid"
                ]
             },
             "score": {
