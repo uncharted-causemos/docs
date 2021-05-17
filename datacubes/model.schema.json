@@ -194,11 +194,7 @@
                   "float",
                   "str",
                   "datetime",
-                  "date",
-                  "time",
-                  "binary",
-                  "boolean",
-                  "datacube"
+                  "boolean"
                ]
             },
             "unit": {
@@ -359,13 +355,7 @@
                   "int",
                   "float",
                   "str",
-                  "datetime",
-                  "date",
-                  "time",
-                  "longlat",
-                  "binary",
-                  "boolean",
-                  "datacube"
+                  "boolean"
                ]
             },
             "unit": {
