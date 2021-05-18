@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   description: Model Engine API for Causemos.
-  version: "1.0"
-  title: Causemos Modeling Engine API
+  version: "May 2021"
+  title: Causemos Modeling Engine API.
 paths:
   # Create model
   /create-model:
@@ -74,8 +74,10 @@ paths:
     parameters:
       - $ref: "#/components/parameters/modelId"
     post:
-      summary: Invoke an experiment. The payload varies deends on the experiment type, which can be one of [PROJECTION, SENSITIVITY]. This should return immediately with a designated experimentId while the actual experiment runs in the background
+      summary: Invoke an experiment.
       description: |
+        The payload varies deends on the experiment type, which can be one of [PROJECTION, SENSITIVITY]. This should return immediately with a designated experimentId while the actual experiment runs in the background
+
         PROJECTION:
           - Generate a time-series projection of each indicator with confidence intervals based on the given model, parameters, and constraints.
 
@@ -87,7 +89,7 @@ paths:
         SENSITIVITY_ANALYSIS:
           - Perform graph-theoretic calculations on the model graph.
           - Three types of analysis are defined: analysisType ∈ {"IMMEDIATE", "GLOBAL", "PATHWAYS"}
-          - "IMMEDIATE" and "GLOBAL" requests return the 'influence' from one given set of concepts in the model to another.
+          - "IMMEDIATE" and "GLOBAL" requests return the "influence" from one given set of concepts in the model to another.
           - "IMMEDIATE" vs. "GLOBAL": either only the immediate neighbours or all nodes in the model graph are considered in the influence calculation.
           - "PATHWAYS" requests search, score, sort, and return the top numPath pathways connecting the source and target nodes in the model graph.
           - pathAtt ∈ {"INFLUENCE", "SENSITIVITY"} specifies how the scores are calculated and it corresponds to the "influ" and "sensi" options internal to DySE.
@@ -103,8 +105,8 @@ paths:
           application/json:
             schema:
               oneOf:
-                - $ref: '#/components/schemas/ProjectionParameters'
-                - $ref: '#/components/schemas/SensitivityAnalysisParameters'
+                - $ref: "#/components/schemas/ProjectionParameters"
+                - $ref: "#/components/schemas/SensitivityAnalysisParameters"
       responses:
         "200":
           description: OK
@@ -131,8 +133,8 @@ paths:
             application/json:
               schema:
                 oneOf:
-                  - $ref: '#/components/schemas/ProjectionResponse'
-                  - $ref: '#/components/schemas/SensitivityAnalysisResponse'
+                  - $ref: "#/components/schemas/ProjectionResponse"
+                  - $ref: "#/components/schemas/SensitivityAnalysisResponse"
 
   # Update model
   /models/{modelId}/edit-indicators:
@@ -160,14 +162,14 @@ paths:
           application/json:
             schema:
               oneOf:
-                - $ref: '#/components/schemas/EditEdgesRequest'
+                - $ref: "#/components/schemas/EditEdgesRequest"
       responses:
         "200":
           description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/EditEdgesResponse'
+                $ref: "#/components/schemas/EditEdgesResponse"
 
         
 components:
@@ -229,7 +231,7 @@ components:
                   type: number
                 values:
                   allOf:
-                    - $ref: '#/components/schemas/TimeSeries'
+                    - $ref: "#/components/schemas/TimeSeries"
     ModelCreationResponse:
       type: object
       properties:
@@ -272,7 +274,7 @@ components:
     
     ProjectionParameters:
       allOf:
-        - $ref: '#/components/schemas/ModelExperimentCreationRequest'
+        - $ref: "#/components/schemas/ModelExperimentCreationRequest"
         - type: object
           properties: 
             experimentParams:
@@ -301,7 +303,7 @@ components:
     
     SensitivityAnalysisParameters:
       allOf:
-        - $ref: '#/components/schemas/ModelExperimentCreationRequest'
+        - $ref: "#/components/schemas/ModelExperimentCreationRequest"
         - type: object
           properties: 
             experimentParams:
@@ -354,7 +356,7 @@ components:
         
     ProjectionResponse:
       allOf:
-        - $ref: '#/components/schemas/ModelExperimentStatusResponse'
+        - $ref: "#/components/schemas/ModelExperimentStatusResponse"
         - type: object
           properties:
             results:
@@ -366,20 +368,20 @@ components:
                     type: string
                   values:
                     allOf:
-                      - $ref: '#/components/schemas/TimeSeries'
+                      - $ref: "#/components/schemas/TimeSeries"
                   confidenceInterval:
                     type: object
                     properties:
                       upper:
                         allOf:
-                          - $ref: '#/components/schemas/TimeSeries'
+                          - $ref: "#/components/schemas/TimeSeries"
                       lower:
                         allOf:
-                          - $ref: '#/components/schemas/TimeSeries'
+                          - $ref: "#/components/schemas/TimeSeries"
     
     SensitivityAnalysisResponse:
       allOf:
-        - $ref: '#/components/schemas/ModelExperimentStatusResponse'
+        - $ref: "#/components/schemas/ModelExperimentStatusResponse"
         - type: object
           properties:
             immediate:
