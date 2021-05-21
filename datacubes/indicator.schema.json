@@ -56,7 +56,6 @@
          "description": "List of categories",
          "type": "array",
          "items": {
-            "$id": "#/definitions/parameter/tags/items",
             "type": "string"
          },
          "examples": [

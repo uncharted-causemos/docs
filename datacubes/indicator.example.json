@@ -69,12 +69,14 @@
                     {
                         "name": "wm/process/train/agriculture_training",
                         "score": 0.5917248129844666
-                    }],
+                    }
+                ],
                 "properties": [
                     {
                         "name": "wm/property/condition",
                         "score": 0.6441149115562439
-                    }]
+                    }
+                ]
             },
             "data_resolution": {
                 "temporal_resolution": "weekly",

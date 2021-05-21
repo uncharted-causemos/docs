@@ -57,7 +57,6 @@
          "description": "List of categories",
          "type": "array",
          "items": {
-            "$id": "#/definitions/parameter/tags/items",
             "type": "string"
          },
          "examples": [
@@ -92,9 +91,9 @@
             "$ref": "./model-run.schema.json#/properties/id"
          }
       },
-      "stochastic": {
-         "$id": "#/properties/stochastic",
-         "title": "Stochastic?",
+      "is_stochastic": {
+         "$id": "#/properties/is_stochastic",
+         "title": "Is the model stochastic",
          "description": "Is the model stochastic",
          "type": "boolean",
          "default": false
@@ -258,22 +257,6 @@
                   [44, 32]
                ]
             },
-            "tags": {
-               "$id": "#/definitions/parameter/tags",
-               "title": "Parameter Tags",
-               "description": "An array of tags associated with the parameter",
-               "type": "array",
-               "items": {
-                  "$id": "#/definitions/parameter/tags/items",
-                  "type": "string"
-               },
-               "examples": [
-                  [
-                     "agriculture",
-                     "fertilizer"
-                  ]
-               ]
-            },
             "choices": {
                "$id": "#/definitions/parameter/choices",
                "title": "Parameter Choices",
@@ -388,22 +371,6 @@
                "description": "Model specific extras",
                "type": "object",
                "additionalProperties": true
-            },
-            "tags": {
-               "$id": "#/definitions/output/tags",
-               "title": "Output variable Tags",
-               "description": "An array of tags associated with the output variable",
-               "type": "array",
-               "items": {
-                  "$id": "#/definitions/output/tags/items",
-                  "type": "string"
-               },
-               "examples": [
-                  [
-                     "agriculture",
-                     "fertilizer"
-                  ]
-               ]
             },
             "data_resolution": {
                "$id": "#/definitions/output/data_resolution",

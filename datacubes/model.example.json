@@ -18,7 +18,7 @@
     "observed_data": [
         "123e4567-e89b-12d3-a456-426614174000"
     ],
-    "stochastic": false,
+    "is_stochastic": false,
     "tags": [
         "Agriculture",
         "DSSAT",
@@ -74,21 +74,19 @@
                     {
                         "name": "wm/process/train/agriculture_training",
                         "score": 0.5917248129844666
-                    }],
+                    }
+                ],
                 "properties": [
                     {
                         "name": "wm/property/condition",
                         "score": 0.6441149115562439
-                    }]
+                    }
+                ]
             },
             "is_drilldown": true,
             "additional_options": {},
             "data_type": "nominal",
             "default": "irrig",
-            "tags": [
-                "agriculture",
-                "fertilizer"
-            ],
             "choices": [
                 "irrig",
                 "rf_highN",
@@ -104,15 +102,29 @@
             "unit": "degC",
             "unit_description": "degrees Celcius",
             "concepts": {
-                "concepts": [],
-                "processes": [],
-                "properties": []
+                "concepts": [
+                    {
+                        "name": "wm/concept/humanitarian_assistance/food_aid",
+                        "score": 0.785829484462738
+                    }
+                ],
+                "processes": [
+                    {
+                        "name": "wm/process/train/agriculture_training",
+                        "score": 0.5917248129844666
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "wm/property/condition",
+                        "score": 0.6441149115562439
+                    }
+                ]
             },
             "is_drilldown": false,
             "additional_options": {},
             "data_type": "numerical",
             "default": 5,
-            "tags": [],
             "min": 0,
             "max": 10
         }
@@ -126,15 +138,26 @@
             "unit": "kg",
             "unit_description": "kilograms",
             "concepts": {
-                "concepts": [],
-                "processes": [],
-                "properties": []
+                "concepts": [
+                    {
+                        "name": "wm/concept/humanitarian_assistance/food_aid",
+                        "score": 0.785829484462738
+                    }
+                ],
+                "processes": [
+                    {
+                        "name": "wm/process/train/agriculture_training",
+                        "score": 0.5917248129844666
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "wm/property/condition",
+                        "score": 0.6441149115562439
+                    }
+                ]
             },
             "additional_options": {},
-            "tags": [
-                "yield",
-                "crop yield"
-            ],
             "data_resolution": {
                 "temporal_resolution": "weekly",
                 "spatial_resolution": [
