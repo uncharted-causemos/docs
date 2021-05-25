@@ -46,9 +46,9 @@
          "$id": "#/properties/created_at",
          "title": "Model Registration Time",
          "description": "When the model was registered",
-         "type": "string",
+         "type": "integer",
          "examples": [
-            "1970-01-01T00:00:00Z"
+            1234567890000
          ]
       },
       "category": {
@@ -192,8 +192,10 @@
                   "int",
                   "float",
                   "str",
+                  "boolean",
                   "datetime",
-                  "boolean"
+                  "lat",
+                  "lng"
                ]
             },
             "unit": {
@@ -214,11 +216,11 @@
                   "degrees Celcius"
                ]
             },
-            "concepts": {
-               "$id": "#/definitions/parameter/concepts",
-               "title": "Concept Matches",
-               "description": "A list of concepts matched to this varible",
-               "$ref": "#/definitions/concept_components"
+            "ontologies": {
+               "$id": "#/definitions/parameter/ontologies",
+               "title": "Ontology Components",
+               "description": "The three ontological parts representing the concepts matched to this varible",
+               "$ref": "#/definitions/ontology_components"
             },
             "is_drilldown": {
                "$id": "#/definitions/parameter/is_drilldown",
@@ -300,7 +302,9 @@
             "name",
             "display_name",
             "description",
-            "type"
+            "type",
+            "ontologies",
+            "is_primary"
          ],
          "properties": {
             "name": {
@@ -338,7 +342,10 @@
                   "int",
                   "float",
                   "str",
-                  "boolean"
+                  "boolean",
+                  "datetime",
+                  "lat",
+                  "lng"
                ]
             },
             "unit": {
@@ -359,11 +366,20 @@
                   "degrees Celcius"
                ]
             },
-            "concepts": {
-               "$id": "#/definitions/output/concepts",
-               "title": "Concept Matches",
-               "description": "A list of concepts matched to this varible",
-               "$ref": "#/definitions/concept_components"
+            "ontologies": {
+               "$id": "#/definitions/output/ontologies",
+               "title": "Ontology Components",
+               "description": "The three ontological parts representing the concepts matched to this varible",
+               "$ref": "#/definitions/ontology_components"
+            },
+            "is_primary": {
+               "$id": "#/definitions/output/is_primary",
+               "title": "Is Primary?",
+               "description": "Does this variable represent data based on the primary time and location columns",
+               "type": "boolean",
+               "examples": [
+                  true
+               ]
             },
             "additional_options": {
                "$id": "#/definitions/output/additional_options",
@@ -589,25 +605,25 @@
                  "$id": "#/definition/output/gte",
                  "title": "Start Time",
                  "description": "Start Time (inclusive)",
-                 "type": "string",
+                 "type": "integer",
                  "examples": [
-                     "1970-01-01T00:00:00Z"
+                     1234567890000
                  ]
              },
              "lte": {
                  "$id": "#/definition/output/lte",
                  "title": "End Time",
                  "description": "End Time (inclusive)",
-                 "type": "string",
+                 "type": "integer",
                  "examples": [
-                     "2020-01-01T00:00:00Z"
+                     1234567890000
                  ]
              }
          },
          "additionalProperties": true
       },
-      "concept_components": {
-         "$id": "#/definitions/concept_components",
+      "ontology_components": {
+         "$id": "#/definitions/ontology_components",
          "type": "object",
          "required": [
              "concepts",
@@ -616,7 +632,7 @@
          ],
          "properties": {
             "concepts": {
-               "$id": "#/definitions/concept_components/concepts",
+               "$id": "#/definitions/ontology_components/concepts",
                "title": "Matched concepts",
                "description": "A list of concepts matched for this variable",
                "type": "array",
@@ -625,7 +641,7 @@
                }
             },
             "processes": {
-               "$id": "#/definitions/concept_components/processes",
+               "$id": "#/definitions/ontology_components/processes",
                "title": "Matched Processes",
                "description": "A list of processes matched for this variable",
                "type": "array",
@@ -634,7 +650,7 @@
                }
             },
             "properties": {
-               "$id": "#/definitions/concept_components/properties",
+               "$id": "#/definitions/ontology_components/properties",
                "title": "Matched Properties",
                "description": "A list of properties matched for this variable",
                "type": "array",

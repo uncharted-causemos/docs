@@ -46,9 +46,9 @@
             "$id": "#/properties/created_at",
             "title": "Run Creation Time",
             "description": "When the model run was started",
-            "type": "string",
+            "type": "integer",
             "examples": [
-                "1970-01-01T00:00:00Z"
+                1234567890000
             ]
         },
         "data_paths": {

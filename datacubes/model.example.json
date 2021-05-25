@@ -3,7 +3,7 @@
     "id": "123e4567-e89b-12d3-a456-426614174000",
     "name": "DSSAT",
     "description": "The Decision Support System for Agrotechnology Transfer (DSSAT) comprises dynamic crop growth simulation model for over 40 crops.",
-    "created_at": "1970-01-01T00:00:00Z",
+    "created_at": 1234567890000,
     "category": [
         "Economic",
         "Agricultural"
@@ -53,8 +53,8 @@
         ]
     },
     "period": {
-        "gte": "1970-01-01T00:00:00Z",
-        "lte": "2020-01-01T00:00:00Z"
+        "gte": 0,
+        "lte": 1234567890000
     },
     "parameters": [
         {
@@ -63,7 +63,7 @@
             "description": "The management practice to model. rf_highN corresponds to a high nitrogen management  practice. irrig corresponds to a high nitrogen, irrigated management practice. rf_0N  corresponds to a subsistence management practice. rf_lowN corresponds to a low nitrogen  managemet practice.",
             "type": "str",
             "unit_description": "Type of practice",
-            "concepts": {
+            "ontologies": {
                 "concepts": [
                     {
                         "name": "wm/concept/humanitarian_assistance/food_aid",
@@ -101,7 +101,7 @@
             "type": "float",
             "unit": "degC",
             "unit_description": "degrees Celcius",
-            "concepts": {
+            "ontologies": {
                 "concepts": [
                     {
                         "name": "wm/concept/humanitarian_assistance/food_aid",
@@ -137,7 +137,8 @@
             "type": "float",
             "unit": "kg",
             "unit_description": "kilograms",
-            "concepts": {
+            "is_primary": true,
+            "ontologies": {
                 "concepts": [
                     {
                         "name": "wm/concept/humanitarian_assistance/food_aid",
