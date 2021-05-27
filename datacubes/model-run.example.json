@@ -1,0 +1,27 @@
+{
+    "$schema": "./model-run.schema.json",
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "model_name": "DSSAT",
+    "model_id": "123e4567-e89b-12d3-a456-426614174000",
+    "created_at": 1234567890000,
+    "data_paths": [
+        "runs/<run-id>/<cube-id-1>",
+        "runs/<run-id>/<cube-id-2>"
+    ],
+    "pre_gen_output_paths": [
+        "runs/<run-id>/<cube-id-1>/pre-gen"
+    ],
+    "is_default_run": false,
+    "tags": [
+        "Agriculture",
+        "DSSAT",
+        "Ethiopia",
+        "crop production"
+    ],
+    "parameters": [
+        {
+            "name": "management_practice",
+            "value": "irrig"
+        }
+    ]
+}
