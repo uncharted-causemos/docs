@@ -1,7 +1,9 @@
 {
     "$id": "https://github.com/uncharted-causemos/docs/blob/model-schemas/datacubes/model-run.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Model Run Schema",
     "description": "World Modelers Model Run Metadata Schema",
+    "type": "object",
     "required": [
         "id",
         "model_name",
@@ -11,8 +13,6 @@
         "parameters",
         "tags"
     ],
-    "title": "Model Metadata Schema",
-    "type": "object",
     "properties": {
         "id": {
             "$id": "#/properties/id",
@@ -134,7 +134,7 @@
                     "$id": "#/definitions/parameter/default",
                     "title": "Parameter Value",
                     "description": "Set value of parameter during run",
-                    "type": "string",
+                    "type": ["string", "number", "boolean"],
                     "examples": [
                         "irrig"
                     ]
