@@ -22,6 +22,10 @@
         {
             "name": "management_practice",
             "value": "irrig"
+        },
+        {
+            "name": "rainfall_multiplier",
+            "value": 0.71
         }
     ]
 }
