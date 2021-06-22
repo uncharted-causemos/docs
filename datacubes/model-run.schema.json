@@ -55,16 +55,7 @@
             "$id": "#/properties/data_paths",
             "title": "Data Path URLs",
             "description": "URL paths to output model run data",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "examples": [
-                [
-                    "runs/<run-id>/<cube-id-1>",
-                    "runs/<run-id>/<cube-id-2>"
-                ]
-            ]
+            "$ref": "#/definitions/data_paths"
         },
         "pre_gen_output_paths": {
             "$id": "#/properties/pre_gen_output_paths",
@@ -137,6 +128,41 @@
                     "type": ["string", "number", "boolean"],
                     "examples": [
                         "irrig"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "data_paths": {
+            "$id": "#/definitions/data_paths",
+            "type": "object",
+            "properties": {
+                "number": {
+                    "$id": "#/definitions/data_paths/number",
+                    "title": "Numeric data paths",
+                    "description": "URL paths to files with numeric outputs",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "examples": [
+                        [
+                            "https://jataware-world-modelers.s3.amazonaws.com/dmc_results_dev/9a2c9383-26e0-4a7a-81db-64917e4a6652/9a2c9383-26e0-4a7a-81db-64917e4a6652_dssat_pythia-v0.1.parquet.gzip"
+                        ]
+                    ]
+                },
+                "str": {
+                    "$id": "#/definitions/data_paths/str",
+                    "title": "String data paths",
+                    "description": "URL paths to files with string outputs",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "examples": [
+                        [
+                            "https://jataware-world-modelers.s3.amazonaws.com/dmc_results_dev/9a2c9383-26e0-4a7a-81db-64917e4a6652/9a2c9383-26e0-4a7a-81db-64917e4a6652_dssat_pythia-v0.1_str.parquet.gzip"
+                        ]
                     ]
                 }
             },

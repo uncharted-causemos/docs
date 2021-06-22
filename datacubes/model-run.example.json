@@ -4,10 +4,14 @@
     "model_name": "DSSAT",
     "model_id": "123e4567-e89b-12d3-a456-426614174000",
     "created_at": 1234567890000,
-    "data_paths": [
-        "runs/<run-id>/<cube-id-1>",
-        "runs/<run-id>/<cube-id-2>"
-    ],
+    "data_paths": {
+        "number": [
+            "https://jataware-world-modelers.s3.amazonaws.com/dmc_results_dev/9a2c9383-26e0-4a7a-81db-64917e4a6652/9a2c9383-26e0-4a7a-81db-64917e4a6652_dssat_pythia-v0.1.parquet.gzip"
+        ],
+        "str": [
+            "https://jataware-world-modelers.s3.amazonaws.com/dmc_results_dev/9a2c9383-26e0-4a7a-81db-64917e4a6652/9a2c9383-26e0-4a7a-81db-64917e4a6652_dssat_pythia-v0.1_str.parquet.gzip"
+        ]
+    },
     "pre_gen_output_paths": [
         "runs/<run-id>/<cube-id-1>/pre-gen"
     ],
