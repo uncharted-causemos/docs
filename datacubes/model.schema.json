@@ -126,6 +126,15 @@
             "$ref": "#/definitions/output"
          }
       },
+      "qualifier_outputs": {
+         "$id": "#/properties/qualifier_outputs",
+         "title": "Model Qualifier Outputs",
+         "description": "An array describing the additional qualifier columns in the output data files",
+         "type": "array",
+         "items": {
+            "$ref": "#/definitions/qualifier_output"
+         }
+      },
       "tags": {
          "$id": "#/properties/tags",
          "title": "Model Tags",
