@@ -32,6 +32,15 @@
             "WDI"
          ]
       },
+      "family_name": {
+         "$id": "#/properties/name",
+         "title": "Dataset Family Name",
+         "description": "The dataset family name",
+         "type": "string",
+         "examples": [
+            "WDI"
+         ]
+      },
       "description": {
          "$id": "#/properties/description",
          "title": "Dataset Description",
@@ -95,6 +104,15 @@
             "$ref": "#/definitions/output"
          }
       },
+      "qualifier_outputs": {
+         "$id": "#/properties/qualifier_outputs",
+         "title": "Dataset Qualifier Outputs",
+         "description": "An array describing the additional qualifier columns in the output data files",
+         "type": "array",
+         "items": {
+            "$ref": "#/definitions/qualifier_output"
+         }
+      },
       "tags": {
          "$id": "#/properties/tags",
          "title": "Search Tags",
@@ -131,6 +149,7 @@
             "name",
             "display_name",
             "description",
+            "type",
             "unit",
             "ontologies",
             "is_primary"
@@ -256,6 +275,99 @@
                }
             }
          }
+      },
+      "qualifier_output": {
+         "$id": "#/definitions/qualifier_output",
+         "type": "object",
+         "required": [
+            "name",
+            "display_name",
+            "description",
+            "type",
+            "ontologies",
+            "related_features"
+         ],
+         "properties": {
+            "name": {
+               "$id": "#/definitions/qualifier_output/name",
+               "title": "Output Qualifier Column Name",
+               "description": "The name of the output qualifier column in data file",
+               "type": "string",
+               "examples": [
+                  "service_type"
+               ]
+            },
+            "display_name": {
+               "$id": "#/definitions/qualifier_output/display_name",
+               "title": "Output Qualifier Display Name",
+               "description": "The user visible name of the output qualifier",
+               "type": "string",
+               "examples": [
+                  "Type of money service"
+               ]
+            },
+            "description": {
+               "$id": "#/definitions/qualifier_output/description",
+               "title": "Output Qualifier Description",
+               "description": "The description of the output qualifier",
+               "type": "string",
+               "examples": [
+                  "Type of money service used"
+               ]
+            },
+            "type": {
+               "$id": "#/definitions/qualifier_output/type",
+               "title": "Output Qualifier Type",
+               "description": "The type of the output qualifier",
+               "enum": [
+                  "int",
+                  "float",
+                  "str",
+                  "boolean",
+                  "datetime",
+                  "lat",
+                  "lng",
+                  "country",
+                  "admin1",
+                  "admin2",
+                  "admin3"
+               ]
+            },
+            "unit": {
+               "$id": "#/definitions/qualifier_output/unit",
+               "title": "Unit",
+               "description": "The unit of the output qualifier",
+               "type": "string",
+               "examples": [
+                  "unitless"
+               ]
+            },
+            "unit_description": {
+               "$id": "#/definitions/qualifier_output/unit_description",
+               "title": "Unit Description",
+               "description": "A short description of the unit",
+               "type": "string",
+               "examples": [
+                  ""
+               ]
+            },
+            "ontologies": {
+               "$id": "#/definitions/qualifier_output/ontologies",
+               "title": "Ontology Components",
+               "description": "The three ontological parts representing the concepts matched to this output",
+               "$ref": "#/definitions/ontology_components"
+            },
+            "related_features": {
+               "$id": "#/definitions/qualifier_output/related_features",
+               "title": "Related Features",
+               "description": "The feature names that this data should be used as a qualifier for",
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
+            }
+         },
+         "additionalProperties": true
       },
       "maintainer": {
          "$id": "#/definitions/maintainer",

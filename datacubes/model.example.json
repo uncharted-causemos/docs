@@ -1,7 +1,8 @@
 {
     "$schema": "./model.schema.json",
     "id": "123e4567-e89b-12d3-a456-426614174000",
-    "name": "DSSAT",
+    "name": "DSSAT-PYTHIA",
+    "family_name": "DSSAT",
     "description": "The Decision Support System for Agrotechnology Transfer (DSSAT) comprises dynamic crop growth simulation model for over 40 crops.",
     "created_at": 1234567890000,
     "category": [
@@ -165,6 +166,24 @@
                     20,
                     20
                 ]
+            }
+        }
+    ],
+    "qualifier_outputs": [
+        {
+            "name": "crop_type",
+            "display_name": "Crop Type",
+            "description": "The type of crop that was produced",
+            "type": "str",
+            "unit": "unitless",
+            "unit_description": "",
+            "related_features": [
+                "yield"
+            ],
+            "ontologies": {
+                "concepts": [],
+                "processes": [],
+                "properties": []
             }
         }
     ]
