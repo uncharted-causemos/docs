@@ -232,6 +232,12 @@ components:
                 values:
                   allOf:
                     - $ref: "#/components/schemas/TimeSeries"
+                resolution:
+                  type: string
+                  description: Describes resolution of values, e.g. month, year
+                period:
+                  type: number
+                  description: Indicates seasonality period. If period=1 then there is no seasonality.
     ModelCreationResponse:
       type: object
       properties:
@@ -436,6 +442,8 @@ components:
                 type: string
               target:
                 type: string
+              polarity:
+                type: number
               weights:
                 type: array
                 items:
