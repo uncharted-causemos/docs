@@ -193,7 +193,11 @@
                   "boolean",
                   "datetime",
                   "lat",
-                  "lng"
+                  "lng",
+                  "country",
+                  "admin1",
+                  "admin2",
+                  "admin3"
                ]
             },
             "unit": {
