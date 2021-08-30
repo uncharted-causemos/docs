@@ -26,7 +26,7 @@ paths:
         
           Y-Scaling:
             - DySE is a discrete model; indicator data must be converted to positive integers within a range of discrete levels. 
-            - The number of levels is defined by numLevels in conceptIndicators and should be an integer of the form: 
+            - The number of levels is defined by numLevels in nodes and should be an integer of the form: 
               - numLevels = 6 * n + 1 = 7, 13, 19, ... 
             - For each concept, calculate:
               - scalingFactor = (maxValue - minValue) / ((numLevels - 1.0) / 3.0)
@@ -137,16 +137,19 @@ paths:
                   - $ref: "#/components/schemas/SensitivityAnalysisResponse"
 
   # Update model
-  /models/{modelId}/edit-indicators:
+  /models/{modelId}/edit-nodes:
     parameters:
       - $ref: "#/components/parameters/modelId"
     post:
-      summary: Update indicator specification for a set of nodes
+      summary: Update node parameterization for a set of nodes
       requestBody:
         content:
           application/json:
             schema:
-              type: string
+              type: array
+              items:
+                oneOf:
+                  - $ref: "#/components/schemas/NodeParameter"
       responses:
         "200":
           description: OK
@@ -192,6 +195,46 @@ components:
         format: uuid
 
   schemas:
+    # Node parameterization
+    NodeParameter:
+      type: object
+      properties:
+        concept:
+          type: string
+        indicator:
+          type: string
+        values:
+          allOf:
+            - $ref: "#/components/schemas/TimeSeries"
+        numLevels: 
+          type: number
+          description: Number of discrete leveles (DySE)
+        resolution:
+          type: string
+          description: Describes resolution of values, e.g. month, year
+        period:
+          type: number
+          description: Indicates seasonality period. If period=1 then there is no seasonality.
+        minValue: 
+          type: number
+          description: absolute mininum the value can go
+        maxValue: 
+          type: number
+          description: absolute maximum the value can go
+
+    # General statement structure
+    Statement:
+      type: object
+      properties:
+        subj:
+          type: object
+        obj:
+          type: object
+        evidence:
+          type: array
+          items:
+            type: object
+
     # Basic reusable timeseries
     TimeSeries:
       type: array
@@ -214,24 +257,33 @@ components:
           type: array
           description: Nodes and their parameterizations
           items:
-            type: object
-            properties:
-              concept:
-                type: string
-              indicator:
-                type: string
-              values:
-                allOf:
-                  - $ref: "#/components/schemas/TimeSeries"
-              numLevels: 
-                type: number
-                description: Number of discrete leveles (DySE)
-              resolution:
-                type: string
-                description: Describes resolution of values, e.g. month, year
-              period:
-                type: number
-                description: Indicates seasonality period. If period=1 then there is no seasonality.
+            oneOf:
+              - $ref: "#/components/schemas/NodeParameter"
+
+            # type: object
+            # properties:
+            #   concept:
+            #     type: string
+            #   indicator:
+            #     type: string
+            #   values:
+            #     allOf:
+            #       - $ref: "#/components/schemas/TimeSeries"
+            #   numLevels: 
+            #     type: number
+            #     description: Number of discrete leveles (DySE)
+            #   resolution:
+            #     type: string
+            #     description: Describes resolution of values, e.g. month, year
+            #   period:
+            #     type: number
+            #     description: Indicates seasonality period. If period=1 then there is no seasonality.
+            #   minValue: 
+            #     type: number
+            #     description: absolute mininum the value can go
+            #   maxValue: 
+            #     type: number
+            #     description: absolute maximum the value can go
         edges:
           type: array
           items:
@@ -255,15 +307,17 @@ components:
         nodes:
           type: array
           items:
-            concept:
-              type: string
-            scalingFactor:
-              type: number
-              description: optional, provided if engine supports y-scaling
-            scalingBias:
-              type: number
-              description: optional, provided if engine supports y-scaling
-        relations:
+            type: object
+            properties:
+              concept:
+                type: string
+              scalingFactor:
+                type: number
+                description: optional, provided if engine supports y-scaling
+              scalingBias:
+                type: number
+                description: optional, provided if engine supports y-scaling
+        edges:
           type: array
           items:
             type: object
@@ -439,7 +493,7 @@ components:
     EditEdgesRequest:
       type: object
       properties:
-        relations:
+        edges:
           type: array
           items:
             type: object
