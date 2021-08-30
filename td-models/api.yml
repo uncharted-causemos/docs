@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   description: Model Engine API for Causemos.
-  version: "May 2021"
+  version: "Sep 2021"
   title: Causemos Modeling Engine API.
 paths:
   # Create model
@@ -20,9 +20,9 @@ paths:
             - A set of INDRA statements (subject-object relationships between concepts; could be represented by just a weighted directed adjacency matrix),
             - A set of indicator time-series data, each mapped to a concept.
 
-          Aggregation:
-            - func in conceptIndicators specifies the aggregation function to be applied on the indicator data to calculate the initial value of each concept. 
-            - Allowed values: {"min", "max", "first", "last", "median"}, where the default value is "last".
+              # Aggregation:
+              #   - func in conceptIndicators specifies the aggregation function to be applied on the indicator data to calculate the initial value of each concept. 
+              #   - Allowed values: {"min", "max", "first", "last", "median"}, where the default value is "last".
         
           Y-Scaling:
             - DySE is a discrete model; indicator data must be converted to positive integers within a range of discrete levels. 
@@ -210,53 +210,59 @@ components:
         id:
           type: string
           description: A Causemos model UUID
-        statements:
+        nodes: 
           type: array
-          description: Causemos INDRA statement
+          description: Nodes and their parameterizations
           items:
             type: object
-        conceptIndicators:
-          type: object
-          description: Node parameters
-          properties:
-            <conceptName>:
-              type: object
-              description: Concept node name
-              properties:
-                name:
-                  type: string
-                func:
-                  type: string
-                numLevels:
-                  type: number
-                values:
-                  allOf:
-                    - $ref: "#/components/schemas/TimeSeries"
-                resolution:
-                  type: string
-                  description: Describes resolution of values, e.g. month, year
-                period:
-                  type: number
-                  description: Indicates seasonality period. If period=1 then there is no seasonality.
+            properties:
+              concept:
+                type: string
+              indicator:
+                type: string
+              values:
+                allOf:
+                  - $ref: "#/components/schemas/TimeSeries"
+              numLevels: 
+                type: number
+                description: Number of discrete leveles (DySE)
+              resolution:
+                type: string
+                description: Describes resolution of values, e.g. month, year
+              period:
+                type: number
+                description: Indicates seasonality period. If period=1 then there is no seasonality.
+        edges:
+          type: array
+          items:
+            type: object
+            properties:
+              source:
+                type: string
+                description: source concept
+              target:
+                type: string
+                description: target concept
+              statements:
+                type: array
+                items:
+                  type: object
     ModelCreationResponse:
       type: object
       properties:
         status:
           type: string
-        conceptIndicators:
-          type: object
-          properties:
-            <conceptName>:
-              type: object
-              properties:
-                initialValue:
-                  type: number
-                scalingFactor:
-                  type: number
-                  description: optional, provided if engine supports y-scaling
-                scalingBias:
-                  type: number
-                  description: optional, provided if engine supports y-scaling
+        nodes:
+          type: array
+          items:
+            concept:
+              type: string
+            scalingFactor:
+              type: number
+              description: optional, provided if engine supports y-scaling
+            scalingBias:
+              type: number
+              description: optional, provided if engine supports y-scaling
         relations:
           type: array
           items:
