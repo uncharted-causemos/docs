@@ -20,10 +20,6 @@ paths:
             - A set of INDRA statements (subject-object relationships between concepts; could be represented by just a weighted directed adjacency matrix),
             - A set of indicator time-series data, each mapped to a concept.
 
-              # Aggregation:
-              #   - func in conceptIndicators specifies the aggregation function to be applied on the indicator data to calculate the initial value of each concept. 
-              #   - Allowed values: {"min", "max", "first", "last", "median"}, where the default value is "last".
-        
           Y-Scaling:
             - DySE is a discrete model; indicator data must be converted to positive integers within a range of discrete levels. 
             - The number of levels is defined by numLevels in nodes and should be an integer of the form: 
@@ -259,31 +255,6 @@ components:
           items:
             oneOf:
               - $ref: "#/components/schemas/NodeParameter"
-
-            # type: object
-            # properties:
-            #   concept:
-            #     type: string
-            #   indicator:
-            #     type: string
-            #   values:
-            #     allOf:
-            #       - $ref: "#/components/schemas/TimeSeries"
-            #   numLevels: 
-            #     type: number
-            #     description: Number of discrete leveles (DySE)
-            #   resolution:
-            #     type: string
-            #     description: Describes resolution of values, e.g. month, year
-            #   period:
-            #     type: number
-            #     description: Indicates seasonality period. If period=1 then there is no seasonality.
-            #   minValue: 
-            #     type: number
-            #     description: absolute mininum the value can go
-            #   maxValue: 
-            #     type: number
-            #     description: absolute maximum the value can go
         edges:
           type: array
           items:
@@ -299,6 +270,7 @@ components:
                 type: array
                 items:
                   type: object
+
     ModelCreationResponse:
       type: object
       properties:
