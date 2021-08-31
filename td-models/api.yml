@@ -224,12 +224,54 @@ components:
       properties:
         subj:
           type: object
+          properties:
+            concept:
+              type: string
+            factor:
+              type: string
+            adjectives:
+              type: array
+              items:
+                type: string
+            polarity:
+              type: number
         obj:
           type: object
+          properties:
+            concept:
+              type: string
+            factor:
+              type: string
+            adjectives:
+              type: array
+              items:
+                type: string
+            polarity:
+              type: number
         evidence:
           type: array
           items:
             type: object
+            properties:
+              document_context:
+                type: object
+                description: document provenance for the evidence
+              evidence_context:
+                type: object
+                description: evidence level extraction data
+                properties:
+                  subj_polarity:
+                    type: number
+                  subj_adjectives:
+                    type: array
+                    items:
+                      type: string
+                  obj_polarity:
+                    type: number
+                  obj_adjectives:
+                    type: array
+                    items:
+                      type: string
 
     # Basic reusable timeseries
     TimeSeries:
@@ -269,7 +311,8 @@ components:
               statements:
                 type: array
                 items:
-                  type: object
+                  allOf:
+                    - $ref: "#/components/schemas/Statement"
 
     ModelCreationResponse:
       type: object
