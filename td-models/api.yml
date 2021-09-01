@@ -308,6 +308,9 @@ components:
               target:
                 type: string
                 description: target concept
+              polarity:
+                type: number
+                description: edge polarity in Causemos. 1=same, -1=opposite, unknown/ambiguous otherwise
               statements:
                 type: array
                 items:
