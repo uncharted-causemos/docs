@@ -5,11 +5,19 @@
     "model_id": "123e4567-e89b-12d3-a456-426614174000",
     "created_at": 1234567890000,
     "data_paths": [
-        "runs/<run-id>/<cube-id-1>",
-        "runs/<run-id>/<cube-id-2>"
+        "https://jataware-world-modelers.s3.amazonaws.com/DSSAT/run-bar.parquet.gzip"
     ],
     "pre_gen_output_paths": [
-        "runs/<run-id>/<cube-id-1>/pre-gen"
+        {
+            "file": "https://jataware-world-modelers.s3.amazonaws.com/DSSAT/img1.jpg"
+        },
+        {
+            "file": "https://jataware-world-modelers.s3.amazonaws.com/DSSAT/img2.jpg",
+            "name": "Data Uncertainty",
+            "description": "A chart demonstrating the measured uncertainty",
+            "type": "image",
+            "target": "none"
+        }
     ],
     "is_default_run": false,
     "tags": [

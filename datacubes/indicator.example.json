@@ -18,6 +18,18 @@
     "data_paths": [
         "https://jataware-world-modelers.s3.amazonaws.com/WDI/data.csv"
     ],
+    "pre_gen_output_paths": [
+        {
+            "file": "https://jataware-world-modelers.s3.amazonaws.com/dataset-foo/img1.jpg"
+        },
+        {
+            "file": "https://jataware-world-modelers.s3.amazonaws.com/dataset-foo/img2.jpg",
+            "name": "Data Uncertainty",
+            "description": "A chart demonstrating the measured uncertainty",
+            "type": "image",
+            "target": "none"
+        }
+    ],
     "tags": [
         "Agriculture"
     ],

@@ -72,13 +72,8 @@
             "description": "URL paths to pre-generated output",
             "type": "array",
             "items": {
-                "type": "string"
-            },
-            "examples": [
-                [
-                    "runs/<run-id>/<cube-id-1>/pre-gen"
-                ]
-            ]
+                "$ref": "#/definitions/pre_gen_output"
+            }
         },
         "is_default_run": {
             "$id": "#/properties/is_default_run",
@@ -141,6 +136,111 @@
                 }
             },
             "additionalProperties": true
+        },
+        "pre_gen_output": {
+            "$id": "#/definitions/pre_gen_output",
+            "type": "object",
+            "required": [
+                "file"
+            ],
+            "properties": {
+                "file": {
+                    "$id": "#/definitions/pre_gen_output/file",
+                    "title": "File path",
+                    "description": "The URL to the resource",
+                    "type": "string",
+                    "examples": [
+                        "runs/run-foo/img1.jpg"
+                    ]
+                },
+                "name": {
+                    "$id": "#/definitions/pre_gen_output/name",
+                    "title": "Resource Name",
+                    "description": "The name of the resource displayed in Causemos",
+                    "type": "string",
+                    "examples": [
+                        "Data Uncertainty"
+                    ]
+                },
+                "type": {
+                    "$id": "#/definitions/pre_gen_output/type",
+                    "title": "Media type",
+                    "description": "Simple media type",
+                    "enum": [
+                        "image",
+                        "video"
+                     ]
+                },
+                "timestamp": {
+                    "$id": "#/definitions/pre_gen_output/timestamp",
+                    "title": "Timestamp",
+                    "description": "The timestamp associated with this resource",
+                    "type": "integer",
+                    "examples": [
+                        1234567890000
+                    ]
+                },
+                "target": {
+                    "$id": "#/definitions/pre_gen_output/target",
+                    "title": "Visualization target",
+                    "description": "The UI component that this resource is associated with",
+                    "enum": [
+                        "map",
+                        "timeseries",
+                        "none"
+                    ],
+                    "default": "none"
+                },
+                "description": {
+                    "$id": "#/definitions/pre_gen_output/description",
+                    "title": "Description",
+                    "description": "The description of the resource",
+                    "type": "string",
+                    "examples": [
+                        "A chart demonstrating the measured uncertainty"
+                    ]
+                },
+                "coords": {
+                    "$id": "#/definitions/pre_gen_output/coords",
+                    "title": "Geographic Coordinates",
+                    "description": "The two lat/long coordinate pairs for the top/left and bottom/right corners that should be used to overlay this image onto a map.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/pre_gen_output/definitions/coordinate"
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                }
+            },
+            "additionalProperties": true,
+            "definitions": {
+                "coordinate": {
+                    "$id": "#/definitions/pre_gen_output/definitions/coordinate",
+                    "type": "object",
+                    "properties": {
+                        "lat": {
+                            "$id": "#/definitions/pre_gen_output/definitions/coordinate/lat",
+                            "title": "Latitude",
+                            "description": "Latitude",
+                            "type": "number",
+                            "examples": [
+                                12.34,
+                                -23.45
+                            ]
+                        },
+                        "long": {
+                            "$id": "#/definitions/pre_gen_output/definitions/coordinate/long",
+                            "title": "Longitude",
+                            "description": "Longitude",
+                            "type": "number",
+                            "examples": [
+                                12.34,
+                                -23.45
+                            ]
+                        }
+                    }
+                }
+            }
         }
     }
 }
