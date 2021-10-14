@@ -203,6 +203,17 @@ components:
           value:
             type: number
 
+    TimeSeriesDistribution:
+      type: array
+      items:
+        type: object
+        properties:
+          timestamp:
+            type: number
+          values:
+            type: array
+
+
     # For create-model
     ModelCreationRequest:
       type: object
@@ -374,16 +385,7 @@ components:
                     type: string
                   values:
                     allOf:
-                      - $ref: "#/components/schemas/TimeSeries"
-                  confidenceInterval:
-                    type: object
-                    properties:
-                      upper:
-                        allOf:
-                          - $ref: "#/components/schemas/TimeSeries"
-                      lower:
-                        allOf:
-                          - $ref: "#/components/schemas/TimeSeries"
+                      - $ref: "#/components/schemas/TimeSeriesDistribution"
     
     SensitivityAnalysisResponse:
       allOf:
