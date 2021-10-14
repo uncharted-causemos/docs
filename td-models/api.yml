@@ -79,7 +79,8 @@ paths:
         The payload varies deends on the experiment type, which can be one of [PROJECTION, SENSITIVITY]. This should return immediately with a designated experimentId while the actual experiment runs in the background
 
         PROJECTION:
-          - Generate a time-series projection of each indicator with confidence intervals based on the given model, parameters, and constraints.
+          - Generate a timeseries projection of each indicator based on the given model, parameters, and constraints.
+          - Each timestep of the series contains an array of numbers representing the full distribution of projected values.
 
         GOAL_OPTIMIZATION:
           - Perform optimization over the initial values of the model to ensure that the projections achieve given fixed values or "goals".
