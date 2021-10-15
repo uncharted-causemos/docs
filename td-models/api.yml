@@ -257,6 +257,8 @@ components:
       properties:
         status:
           type: string
+        progressPercentage:
+          type: number
         conceptIndicators:
           type: object
           properties:
@@ -373,6 +375,8 @@ components:
         status:
           type: string
           enum: ["Completed", "In Progress"]
+        progressPercentage:
+          type: number
         
     ProjectionResponse:
       allOf:
