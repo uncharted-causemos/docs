@@ -355,6 +355,9 @@ components:
                 analysisMode:
                   type: string
                   enum: ["STATIC", "DYNAMIC"]
+                analysisMethodology:
+                  type: string
+                  enum: ["HYBRID", "FUNCTION"]
                 analysisParam:
                   type: object
                   properties:
