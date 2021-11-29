@@ -1,3 +1,12 @@
+### Setup
+Requires Node 12 or higher
+
+```
+npm install
+```
+
+Fill in the relevant configuration fields in config.json
+
 ### Test
 ```
 node ./run-test.js <model>
