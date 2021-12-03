@@ -219,7 +219,7 @@ components:
             - $ref: "#/components/schemas/TimeSeries"
         numLevels: 
           type: number
-          description: Number of discrete leveles (DySE)
+          description: Number of discrete levels (DySE)
         resolution:
           type: string
           description: Describes resolution of values, e.g. month, year
