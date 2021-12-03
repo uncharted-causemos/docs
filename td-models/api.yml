@@ -147,7 +147,7 @@ paths:
                   - $ref: "#/components/schemas/ProjectionResponse"
                   - $ref: "#/components/schemas/SensitivityAnalysisResponse"
 
-  # Update model
+  # Update model nodes
   /models/{modelId}/edit-nodes:
     parameters:
       - $ref: "#/components/parameters/modelId"
@@ -166,24 +166,24 @@ paths:
           description: OK
 
   # Update model
-  /models/{modelId}/edit-edges:
-    parameters:
-      - $ref: "#/components/parameters/modelId"
-    post:
-      summary: Edit edge weight values
-      requestBody:
-        content:
-          application/json:
-            schema:
-              oneOf:
-                - $ref: "#/components/schemas/EditEdgesRequest"
-      responses:
-        "200":
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/EditEdgesResponse"
+  # /models/{modelId}/edit-edges:
+  #   parameters:
+  #     - $ref: "#/components/parameters/modelId"
+  #   post:
+  #     summary: Edit edge weight values
+  #     requestBody:
+  #       content:
+  #         application/json:
+  #           schema:
+  #             oneOf:
+  #               - $ref: "#/components/schemas/EditEdgesRequest"
+  #     responses:
+  #       "200":
+  #         description: OK
+  #         content:
+  #           application/json:
+  #             schema:
+  #               $ref: "#/components/schemas/EditEdgesResponse"
 
         
 components:
@@ -339,6 +339,12 @@ components:
               polarity:
                 type: number
                 description: edge polarity in Causemos. 1=same, -1=opposite, unknown/ambiguous otherwise
+              weights:
+                type: array
+                description: denotes overriding weights analyts want to impose, for DySE this will be [level, trend], for Delphi this will be [weight]
+                items:
+                  description: between [0, 1]
+                  type: number
               statements:
                 type: array
                 items:
@@ -374,7 +380,9 @@ components:
                 type: string
               weights:
                 type: array
+                description: denote inferred edge weights from the engines. e.g. for DySE this will be [level, trend], for Delphy this will be [weight]
                 items:
+                  description: between [0, 1]
                   type: number
 
     ModelExperimentCreationRequest:
