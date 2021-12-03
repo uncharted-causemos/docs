@@ -341,7 +341,7 @@ components:
                 description: edge polarity in Causemos. 1=same, -1=opposite, unknown/ambiguous otherwise
               weights:
                 type: array
-                description: denotes overriding weights analyts want to impose, for DySE this will be [level, trend], for Delphi this will be [weight]
+                description: denotes overriding weights analysts want to impose, for DySE this will be [level, trend], for Delphi this will be [weight]
                 items:
                   description: between [0, 1]
                   type: number
