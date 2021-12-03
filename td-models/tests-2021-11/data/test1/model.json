@@ -1,0 +1,134 @@
+{
+    "conceptIndicators": {
+        "X": {
+            "func": "last",
+            "maxValue": 1,
+            "minValue": 0,
+            "name": "Abstract 2",
+            "numLevels": 31,
+            "period": 1,
+            "resolution": "month",
+            "values": [
+                {
+                    "timestamp": 1483228800000,
+                    "value": 0.5
+                },
+                {
+                    "timestamp": 1485907200000,
+                    "value": 0.5
+                },
+                {
+                    "timestamp": 1488326400000,
+                    "value": 0.5
+                }
+            ]
+        },
+        "wm_compositional/concept/agriculture": {
+            "func": "last",
+            "maxValue": 1,
+            "minValue": 0,
+            "name": "Abstract 1",
+            "numLevels": 31,
+            "period": 1,
+            "resolution": "month",
+            "values": [
+                {
+                    "timestamp": 1483228800000,
+                    "value": 0.5
+                },
+                {
+                    "timestamp": 1485907200000,
+                    "value": 0.5
+                },
+                {
+                    "timestamp": 1488326400000,
+                    "value": 0.5
+                }
+            ]
+        }
+    },
+    "id": "test1",
+    "statements": [
+        {
+            "belief": 0.9499999936757135,
+            "evidence": [
+                {
+                    "document_context": {
+                        "doc_id": "d37d228767559fd8880ab5c118d40554"
+                    },
+                    "evidence_context": {
+                        "agents_text": [
+                            "productivity in agriculture",
+                            "conflict"
+                        ],
+                        "contradiction_words": [],
+                        "hedging_words": [],
+                        "obj_adjectives": [],
+                        "obj_polarity": null,
+                        "source_api": "eidos",
+                        "source_hash": 3517433602144773000,
+                        "subj_adjectives": [],
+                        "subj_polarity": -1,
+                        "text": "Further evidence demonstrates that the pattern in which climate affects income is similar to that which drives conflict ."
+                    }
+                }
+            ],
+            "id": "bb627ffc-507b-4734-a93e-5f708ce2b0e9-d108412a-e63d-466d-bce4-45140ebcae54",
+            "matches_hash": "-25845204048518366",
+            "modified_at": 1636987456460,
+            "obj": {
+                "adjectives": [],
+                "concept": "X",
+                "concept_score": 1.0000001192092896,
+                "factor": "conflict",
+                "geo_context": {},
+                "polarity": 1,
+                "process": "",
+                "process_property": "",
+                "theme": "wm_compositional/concept/crisis_or_disaster/conflict",
+                "theme_property": "",
+                "time_context": {
+                    "end": {
+                        "date": 1463716800000,
+                        "day": 20,
+                        "month": 5,
+                        "year": 2016
+                    },
+                    "start": {
+                        "date": 1463630400000,
+                        "day": 19,
+                        "month": 5,
+                        "year": 2016
+                    }
+                }
+            },
+            "subj": {
+                "adjectives": [],
+                "concept": "wm_compositional/concept/agriculture",
+                "concept_score": 1.000000238418579,
+                "factor": "productivity in agriculture",
+                "geo_context": {},
+                "polarity": -1,
+                "process": "",
+                "process_property": "",
+                "theme": "wm_compositional/concept/agriculture",
+                "theme_property": "",
+                "time_context": {
+                    "end": {
+                        "date": 1463716800000,
+                        "day": 20,
+                        "month": 5,
+                        "year": 2016
+                    },
+                    "start": {
+                        "date": 1463630400000,
+                        "day": 19,
+                        "month": 5,
+                        "year": 2016
+                    }
+                }
+            }
+        }
+    ]
+}
+
