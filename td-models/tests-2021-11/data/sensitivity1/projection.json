@@ -1,0 +1,28 @@
+{
+    "experimentParam": {
+        "analysisMethodology": "HYBRID",
+        "analysisMode": "DYNAMIC",
+        "analysisParam": {
+            "numPath": 0,
+            "pathAtt": "",
+            "source": [],
+            "target": []
+        },
+        "analysisType": "GLOBAL",
+        "constraints": [
+            {
+                "concept": "b",
+                "values": [
+                    {
+                        "step": 6,
+                        "value": 2 
+                    }
+                ]
+            }
+        ],
+        "endTime": 1640995200000.0,
+        "numTimesteps": 12,
+        "startTime": 1609459200000.0
+    },
+    "experimentType": "SENSITIVITY_ANALYSIS"
+}
