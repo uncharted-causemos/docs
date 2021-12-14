@@ -31,6 +31,7 @@ paths:
             - For each concept, calculate:
               - scalingFactor = (maxValue - minValue) / ((numLevels - 1.0) / 3.0)
               - scalingBias = 0.5 * (maxValue + minValue)
+              - Note: the scalingFactor was (maxValue - minValue) / ((numLevels - 1.0) / 3.0), but now that we allow the user to set the max and min values, we don't divide by 3
             - Discretize and standardize the indicator time-series data for each concept by calculating
               - indValues_ = np.floor((indValues - scalingBias) / scalingFactor + 0.5 * numLevels)
             - indValues is the array of values of each indicator time-series data sent by Causemos to be converted; indValues_ is the array of converted values to be sent to the engine.
