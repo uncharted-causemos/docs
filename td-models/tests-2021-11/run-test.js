@@ -11,7 +11,7 @@ const requestAsPromise = (options) => {
     }
 
     if (!options.timeout) {
-      options.timeout = 45000;
+      options.timeout = 45000 * 2;
     }
 
     request(options, function (error, response, body) {
@@ -122,18 +122,32 @@ async function runTest() {
   const createModelPayload = require(`./data/${model}/model.json`);
   const projectionPayload = require(`./data/${model}/projection.json`);
 
+  let start = 0 ;
+  let end = 0; 
+
+  start = (new Date()).getTime();
   result = await createModel(createModelPayload);
   console.log('model status', result.status);
+  end = (new Date()).getTime();
+
+  console.log(`\n== Create mode elapsed in ${end - start} millis`);
 
   /* Train loop */
+  start = (new Date()).getTime();
   while(true && result.status !== 'ready') {
-    await sleep(8000);
+    await sleep(5000);
+
+    const statusQueryStart = (new Date()).getTime();
     result = await trainingStatus(model);
-    console.log('training status', result.status);
-    if (result.status === 'ready') {
+    const statusQueryEnd = (new Date()).getTime();
+    console.log(`status query took ${statusQueryEnd - statusQueryStart} millis`);
+
+    if (result.status === 'ready' || result.status === 'success') {
       break;
     }
   }
+  end = (new Date()).getTime();
+  console.log(`\n== Train model elapsed in ${end - start} millis`);
 
   /* Experiment request */
   result = await projectionRequest(model, projectionPayload);
@@ -142,17 +156,21 @@ async function runTest() {
   
 
   /* Experiment loop */
+  start = (new Date()).getTime();
   while(true) {
     await sleep(3000);
     try {
       result = await experimentStatus(model, experimentId);
-      if (result.status === 'completed') {
+      console.log(result);
+      if (result.status === 'completed' || result.status === 'Completed') {
         break;
       }
     } catch (err) {
       console.log('error', err);
     }
   }
+  end = (new Date()).getTime();
+  console.log(`\n== Experiment elapsed in ${end - start} millis`);
 
   /* Print */
   console.log(JSON.stringify(result, null, 2));
