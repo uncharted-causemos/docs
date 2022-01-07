@@ -1,0 +1,2479 @@
+{
+    "edges": [
+        {
+            "polarity": -1,
+            "source": "wm/process/attempt",
+            "statements": [
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Vagg, Alexander S",
+                                "doc_id": "aaccae2baa33d19b99c40b27cef4a11d",
+                                "document_source": "",
+                                "file_type": "application/pdf",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1595980800000,
+                                    "day": 29,
+                                    "month": 7,
+                                    "year": 2020
+                                },
+                                "publisher_name": "",
+                                "title": ""
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "900 million program",
+                                    "terrorism"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": 3524021407098550000,
+                                "subj_adjectives": [],
+                                "text": "In 2018, the government approved an ambitious five-year, $900 million program to counter \"religious extremism and terrorism.\""
+                            }
+                        }
+                    ],
+                    "id": "f59a346a-3e00-48f0-a886-9b1f92cadd2d",
+                    "matches_hash": -3828266919100915,
+                    "modified_at": 1636734203251,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "terrorism",
+                        "geo_context": {
+                            "location": {
+                                "lat": 22,
+                                "lon": 79
+                            },
+                            "name": "Republic of India"
+                        },
+                        "polarity": -1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.9999999999999999,
+                        "factor": "900 million program",
+                        "geo_context": {
+                            "location": {
+                                "lat": 22,
+                                "lon": 79
+                            },
+                            "name": "Republic of India"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Vagg, Alexander S",
+                                "doc_id": "aaccae2baa33d19b99c40b27cef4a11d",
+                                "document_source": "",
+                                "file_type": "application/pdf",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1595980800000,
+                                    "day": 29,
+                                    "month": 7,
+                                    "year": 2020
+                                },
+                                "publisher_name": "",
+                                "title": ""
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "900 million program",
+                                    "terrorism"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": 3524021407098550000,
+                                "subj_adjectives": [],
+                                "text": "In 2018, the government approved an ambitious five-year, $900 million program to counter \"religious extremism and terrorism.\""
+                            }
+                        }
+                    ],
+                    "id": "f59a346a-3e00-48f0-a886-9b1f92cadd2d",
+                    "matches_hash": "abcabcx-3828266919100915",
+                    "modified_at": 1636734203251,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "terrorism",
+                        "geo_context": {
+                            "location": {
+                                "lat": 22,
+                                "lon": 79
+                            },
+                            "name": "Republic of India"
+                        },
+                        "polarity": -1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.9999999999999999,
+                        "factor": "900 million program",
+                        "geo_context": {
+                            "location": {
+                                "lat": 22,
+                                "lon": 79
+                            },
+                            "name": "Republic of India"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Vagg, Alexander S",
+                                "doc_id": "aaccae2baa33d19b99c40b27cef4a11d",
+                                "document_source": "",
+                                "file_type": "application/pdf",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1595980800000,
+                                    "day": 29,
+                                    "month": 7,
+                                    "year": 2020
+                                },
+                                "publisher_name": "",
+                                "title": ""
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "900 million program",
+                                    "terrorism"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": 3524021407098550000,
+                                "subj_adjectives": [],
+                                "text": "In 2018, the government approved an ambitious five-year, $900 million program to counter \"religious extremism and terrorism.\""
+                            }
+                        }
+                    ],
+                    "id": "f59a346a-3e00-48f0-a886-9b1f92cadd2d",
+                    "matches_hash": "abc-3828266919100915",
+                    "modified_at": 1636734203251,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "terrorism",
+                        "geo_context": {
+                            "location": {
+                                "lat": 22,
+                                "lon": 79
+                            },
+                            "name": "Republic of India"
+                        },
+                        "polarity": -1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.9999999999999999,
+                        "factor": "900 million program",
+                        "geo_context": {
+                            "location": {
+                                "lat": 22,
+                                "lon": 79
+                            },
+                            "name": "Republic of India"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Vagg, Alexander S",
+                                "doc_id": "aaccae2baa33d19b99c40b27cef4a11d",
+                                "document_source": "",
+                                "file_type": "application/pdf",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1595980800000,
+                                    "day": 29,
+                                    "month": 7,
+                                    "year": 2020
+                                },
+                                "publisher_name": "",
+                                "title": ""
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "900 million program",
+                                    "terrorism"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": 3524021407098550000,
+                                "subj_adjectives": [],
+                                "text": "In 2018, the government approved an ambitious five-year, $900 million program to counter \"religious extremism and terrorism.\""
+                            }
+                        }
+                    ],
+                    "id": "f59a346a-3e00-48f0-a886-9b1f92cadd2d",
+                    "matches_hash": "abcabcabcx-3828266919100915",
+                    "modified_at": 1636734203251,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "terrorism",
+                        "geo_context": {
+                            "location": {
+                                "lat": 22,
+                                "lon": 79
+                            },
+                            "name": "Republic of India"
+                        },
+                        "polarity": -1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.9999999999999999,
+                        "factor": "900 million program",
+                        "geo_context": {
+                            "location": {
+                                "lat": 22,
+                                "lon": 79
+                            },
+                            "name": "Republic of India"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                }
+            ],
+            "target": "wm/process/conflict/attack"
+        },
+        {
+            "polarity": 1,
+            "source": "wm/process/attempt",
+            "statements": [
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "",
+                                "doc_id": "aab94933547bc59bd28f30c4bb5a61ba",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1276819200000,
+                                    "day": 18,
+                                    "month": 6,
+                                    "year": 2010
+                                },
+                                "publisher_name": "All Africa Global Media",
+                                "title": "Machage Shown the Door"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "an effort",
+                                    "the prosecution"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": 2575245333287944000,
+                                "subj_adjectives": [],
+                                "text": "But the 'No' camp thought the suspension and the prosecution of MPs over hate speech was an effort by the government to intimidate those opposed to the proposed constitution."
+                            }
+                        }
+                    ],
+                    "id": "157dae3c-d990-4835-90c6-6e6788f3040a",
+                    "matches_hash": 22841775690060010,
+                    "modified_at": 1636734205944,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/legislate/regulate",
+                        "concept_score": 0.7,
+                        "factor": "the prosecution",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/legislate/regulate",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.848636526295288,
+                        "factor": "an effort",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "",
+                                "doc_id": "aab94933547bc59bd28f30c4bb5a61ba",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1276819200000,
+                                    "day": 18,
+                                    "month": 6,
+                                    "year": 2010
+                                },
+                                "publisher_name": "All Africa Global Media",
+                                "title": "Machage Shown the Door"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "an effort",
+                                    "the prosecution"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": 2575245333287944000,
+                                "subj_adjectives": [],
+                                "text": "But the 'No' camp thought the suspension and the prosecution of MPs over hate speech was an effort by the government to intimidate those opposed to the proposed constitution."
+                            }
+                        }
+                    ],
+                    "id": "157dae3c-d990-4835-90c6-6e6788f3040a",
+                    "matches_hash": "abcabcx22841775690060010",
+                    "modified_at": 1636734205944,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/legislate/regulate",
+                        "concept_score": 0.7,
+                        "factor": "the prosecution",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/legislate/regulate",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.848636526295288,
+                        "factor": "an effort",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "",
+                                "doc_id": "aab94933547bc59bd28f30c4bb5a61ba",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1276819200000,
+                                    "day": 18,
+                                    "month": 6,
+                                    "year": 2010
+                                },
+                                "publisher_name": "All Africa Global Media",
+                                "title": "Machage Shown the Door"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "an effort",
+                                    "the prosecution"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": 2575245333287944000,
+                                "subj_adjectives": [],
+                                "text": "But the 'No' camp thought the suspension and the prosecution of MPs over hate speech was an effort by the government to intimidate those opposed to the proposed constitution."
+                            }
+                        }
+                    ],
+                    "id": "157dae3c-d990-4835-90c6-6e6788f3040a",
+                    "matches_hash": "abc22841775690060010",
+                    "modified_at": 1636734205944,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/legislate/regulate",
+                        "concept_score": 0.7,
+                        "factor": "the prosecution",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/legislate/regulate",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.848636526295288,
+                        "factor": "an effort",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "",
+                                "doc_id": "aab94933547bc59bd28f30c4bb5a61ba",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1276819200000,
+                                    "day": 18,
+                                    "month": 6,
+                                    "year": 2010
+                                },
+                                "publisher_name": "All Africa Global Media",
+                                "title": "Machage Shown the Door"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "an effort",
+                                    "the prosecution"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": 2575245333287944000,
+                                "subj_adjectives": [],
+                                "text": "But the 'No' camp thought the suspension and the prosecution of MPs over hate speech was an effort by the government to intimidate those opposed to the proposed constitution."
+                            }
+                        }
+                    ],
+                    "id": "157dae3c-d990-4835-90c6-6e6788f3040a",
+                    "matches_hash": "abcabcabcx22841775690060010",
+                    "modified_at": 1636734205944,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/legislate/regulate",
+                        "concept_score": 0.7,
+                        "factor": "the prosecution",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/legislate/regulate",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.848636526295288,
+                        "factor": "an effort",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                }
+            ],
+            "target": "wm/process/legislate/regulate"
+        },
+        {
+            "polarity": 1,
+            "source": "wm/process/conflict/attack",
+            "statements": [
+                {
+                    "belief": 0.86,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Financial Times",
+                                "doc_id": "f9840eb3ef151526c35fb91add3b203d",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1572912000000,
+                                    "day": 5,
+                                    "month": 11,
+                                    "year": 2019
+                                },
+                                "publisher_name": "Business Day Media Ltd.",
+                                "title": "Ethiopian activist slams \u2018authoritarian\u2019 Nobel winner Abiy Ahmed"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "inter-community violence",
+                                    "provoking"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -2148695534035613200,
+                                "subj_adjectives": [],
+                                "text": "But a year later, those reforms have been followed by an increase in inter-community violence across the country, provoking strong criticisms of his leadership."
+                            }
+                        },
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Financial Times",
+                                "doc_id": "f9840eb3ef151526c35fb91add3b203d",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1572912000000,
+                                    "day": 5,
+                                    "month": 11,
+                                    "year": 2019
+                                },
+                                "publisher_name": "Business Day Media Ltd.",
+                                "title": "Ethiopian activist slams \u2018authoritarian\u2019 Nobel winner Abiy Ahmed"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "inter-community violence",
+                                    "strong criticisms"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -2148695534035613200,
+                                "subj_adjectives": [],
+                                "text": "But a year later, those reforms have been followed by an increase in inter-community violence across the country, provoking strong criticisms of his leadership."
+                            }
+                        }
+                    ],
+                    "id": "3a6d9f5e-2f05-4c47-83a1-8240c4e7ce94",
+                    "matches_hash": 30049944124207060,
+                    "modified_at": 1636734208007,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/crisis_or_disaster/conflict/discontent",
+                        "concept_score": 0.7067466200841638,
+                        "factor": "provoking",
+                        "geo_context": {
+                            "location": {
+                                "lat": 15,
+                                "lon": 39
+                            },
+                            "name": "State of Eritrea"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/crisis_or_disaster/conflict/discontent",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "inter-community violence",
+                        "geo_context": {
+                            "location": {
+                                "lat": 15,
+                                "lon": 39
+                            },
+                            "name": "State of Eritrea"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.86,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Financial Times",
+                                "doc_id": "f9840eb3ef151526c35fb91add3b203d",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1572912000000,
+                                    "day": 5,
+                                    "month": 11,
+                                    "year": 2019
+                                },
+                                "publisher_name": "Business Day Media Ltd.",
+                                "title": "Ethiopian activist slams \u2018authoritarian\u2019 Nobel winner Abiy Ahmed"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "inter-community violence",
+                                    "provoking"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -2148695534035613200,
+                                "subj_adjectives": [],
+                                "text": "But a year later, those reforms have been followed by an increase in inter-community violence across the country, provoking strong criticisms of his leadership."
+                            }
+                        },
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Financial Times",
+                                "doc_id": "f9840eb3ef151526c35fb91add3b203d",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1572912000000,
+                                    "day": 5,
+                                    "month": 11,
+                                    "year": 2019
+                                },
+                                "publisher_name": "Business Day Media Ltd.",
+                                "title": "Ethiopian activist slams \u2018authoritarian\u2019 Nobel winner Abiy Ahmed"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "inter-community violence",
+                                    "strong criticisms"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -2148695534035613200,
+                                "subj_adjectives": [],
+                                "text": "But a year later, those reforms have been followed by an increase in inter-community violence across the country, provoking strong criticisms of his leadership."
+                            }
+                        }
+                    ],
+                    "id": "3a6d9f5e-2f05-4c47-83a1-8240c4e7ce94",
+                    "matches_hash": "abcabcx30049944124207060",
+                    "modified_at": 1636734208007,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/crisis_or_disaster/conflict/discontent",
+                        "concept_score": 0.7067466200841638,
+                        "factor": "provoking",
+                        "geo_context": {
+                            "location": {
+                                "lat": 15,
+                                "lon": 39
+                            },
+                            "name": "State of Eritrea"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/crisis_or_disaster/conflict/discontent",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "inter-community violence",
+                        "geo_context": {
+                            "location": {
+                                "lat": 15,
+                                "lon": 39
+                            },
+                            "name": "State of Eritrea"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.86,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Financial Times",
+                                "doc_id": "f9840eb3ef151526c35fb91add3b203d",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1572912000000,
+                                    "day": 5,
+                                    "month": 11,
+                                    "year": 2019
+                                },
+                                "publisher_name": "Business Day Media Ltd.",
+                                "title": "Ethiopian activist slams \u2018authoritarian\u2019 Nobel winner Abiy Ahmed"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "inter-community violence",
+                                    "provoking"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -2148695534035613200,
+                                "subj_adjectives": [],
+                                "text": "But a year later, those reforms have been followed by an increase in inter-community violence across the country, provoking strong criticisms of his leadership."
+                            }
+                        },
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Financial Times",
+                                "doc_id": "f9840eb3ef151526c35fb91add3b203d",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1572912000000,
+                                    "day": 5,
+                                    "month": 11,
+                                    "year": 2019
+                                },
+                                "publisher_name": "Business Day Media Ltd.",
+                                "title": "Ethiopian activist slams \u2018authoritarian\u2019 Nobel winner Abiy Ahmed"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "inter-community violence",
+                                    "strong criticisms"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -2148695534035613200,
+                                "subj_adjectives": [],
+                                "text": "But a year later, those reforms have been followed by an increase in inter-community violence across the country, provoking strong criticisms of his leadership."
+                            }
+                        }
+                    ],
+                    "id": "3a6d9f5e-2f05-4c47-83a1-8240c4e7ce94",
+                    "matches_hash": "abc30049944124207060",
+                    "modified_at": 1636734208007,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/crisis_or_disaster/conflict/discontent",
+                        "concept_score": 0.7067466200841638,
+                        "factor": "provoking",
+                        "geo_context": {
+                            "location": {
+                                "lat": 15,
+                                "lon": 39
+                            },
+                            "name": "State of Eritrea"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/crisis_or_disaster/conflict/discontent",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "inter-community violence",
+                        "geo_context": {
+                            "location": {
+                                "lat": 15,
+                                "lon": 39
+                            },
+                            "name": "State of Eritrea"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.86,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Financial Times",
+                                "doc_id": "f9840eb3ef151526c35fb91add3b203d",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1572912000000,
+                                    "day": 5,
+                                    "month": 11,
+                                    "year": 2019
+                                },
+                                "publisher_name": "Business Day Media Ltd.",
+                                "title": "Ethiopian activist slams \u2018authoritarian\u2019 Nobel winner Abiy Ahmed"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "inter-community violence",
+                                    "provoking"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -2148695534035613200,
+                                "subj_adjectives": [],
+                                "text": "But a year later, those reforms have been followed by an increase in inter-community violence across the country, provoking strong criticisms of his leadership."
+                            }
+                        },
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Financial Times",
+                                "doc_id": "f9840eb3ef151526c35fb91add3b203d",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1572912000000,
+                                    "day": 5,
+                                    "month": 11,
+                                    "year": 2019
+                                },
+                                "publisher_name": "Business Day Media Ltd.",
+                                "title": "Ethiopian activist slams \u2018authoritarian\u2019 Nobel winner Abiy Ahmed"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "inter-community violence",
+                                    "strong criticisms"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -2148695534035613200,
+                                "subj_adjectives": [],
+                                "text": "But a year later, those reforms have been followed by an increase in inter-community violence across the country, provoking strong criticisms of his leadership."
+                            }
+                        }
+                    ],
+                    "id": "3a6d9f5e-2f05-4c47-83a1-8240c4e7ce94",
+                    "matches_hash": "abcabcabcx30049944124207060",
+                    "modified_at": 1636734208007,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/crisis_or_disaster/conflict/discontent",
+                        "concept_score": 0.7067466200841638,
+                        "factor": "provoking",
+                        "geo_context": {
+                            "location": {
+                                "lat": 15,
+                                "lon": 39
+                            },
+                            "name": "State of Eritrea"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/crisis_or_disaster/conflict/discontent",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "inter-community violence",
+                        "geo_context": {
+                            "location": {
+                                "lat": 15,
+                                "lon": 39
+                            },
+                            "name": "State of Eritrea"
+                        },
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                }
+            ],
+            "target": "wm/concept/crisis_or_disaster/conflict/discontent"
+        },
+        {
+            "polarity": -1,
+            "source": "wm/concept/innovation",
+            "statements": [
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "",
+                                "doc_id": "522332c45be2278f7e81050a4aff2ca4",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1421798400000,
+                                    "day": 21,
+                                    "month": 1,
+                                    "year": 2015
+                                },
+                                "publisher_name": "All Africa Global Media",
+                                "title": "Inclusive Development Critical for Preventing Conflict, Speakers Emphasize, As Security Council Debates Maintenance of International Peace, Security [document]"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "common approach",
+                                    "conflict"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -542689498606370700,
+                                "subj_adjectives": [],
+                                "text": "\"The Security Council encourages Member States to consider developing a UN common approach to inclusive development as a key for preventing conflict and enabling long-term stability and sustainable peace."
+                            }
+                        }
+                    ],
+                    "id": "436a69c2-a7ad-4c52-9805-e81cb8734a27",
+                    "matches_hash": -12942237095398750,
+                    "modified_at": 1636734207662,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "conflict",
+                        "geo_context": {},
+                        "polarity": -1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/innovation",
+                        "concept_score": 0.812780617561135,
+                        "factor": "common approach",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/innovation",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "",
+                                "doc_id": "522332c45be2278f7e81050a4aff2ca4",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1421798400000,
+                                    "day": 21,
+                                    "month": 1,
+                                    "year": 2015
+                                },
+                                "publisher_name": "All Africa Global Media",
+                                "title": "Inclusive Development Critical for Preventing Conflict, Speakers Emphasize, As Security Council Debates Maintenance of International Peace, Security [document]"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "common approach",
+                                    "conflict"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -542689498606370700,
+                                "subj_adjectives": [],
+                                "text": "\"The Security Council encourages Member States to consider developing a UN common approach to inclusive development as a key for preventing conflict and enabling long-term stability and sustainable peace."
+                            }
+                        }
+                    ],
+                    "id": "436a69c2-a7ad-4c52-9805-e81cb8734a27",
+                    "matches_hash": "abcabcx-12942237095398750",
+                    "modified_at": 1636734207662,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "conflict",
+                        "geo_context": {},
+                        "polarity": -1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/innovation",
+                        "concept_score": 0.812780617561135,
+                        "factor": "common approach",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/innovation",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "",
+                                "doc_id": "522332c45be2278f7e81050a4aff2ca4",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1421798400000,
+                                    "day": 21,
+                                    "month": 1,
+                                    "year": 2015
+                                },
+                                "publisher_name": "All Africa Global Media",
+                                "title": "Inclusive Development Critical for Preventing Conflict, Speakers Emphasize, As Security Council Debates Maintenance of International Peace, Security [document]"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "common approach",
+                                    "conflict"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -542689498606370700,
+                                "subj_adjectives": [],
+                                "text": "\"The Security Council encourages Member States to consider developing a UN common approach to inclusive development as a key for preventing conflict and enabling long-term stability and sustainable peace."
+                            }
+                        }
+                    ],
+                    "id": "436a69c2-a7ad-4c52-9805-e81cb8734a27",
+                    "matches_hash": "abc-12942237095398750",
+                    "modified_at": 1636734207662,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "conflict",
+                        "geo_context": {},
+                        "polarity": -1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/innovation",
+                        "concept_score": 0.812780617561135,
+                        "factor": "common approach",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/innovation",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "",
+                                "doc_id": "522332c45be2278f7e81050a4aff2ca4",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1421798400000,
+                                    "day": 21,
+                                    "month": 1,
+                                    "year": 2015
+                                },
+                                "publisher_name": "All Africa Global Media",
+                                "title": "Inclusive Development Critical for Preventing Conflict, Speakers Emphasize, As Security Council Debates Maintenance of International Peace, Security [document]"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "common approach",
+                                    "conflict"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -542689498606370700,
+                                "subj_adjectives": [],
+                                "text": "\"The Security Council encourages Member States to consider developing a UN common approach to inclusive development as a key for preventing conflict and enabling long-term stability and sustainable peace."
+                            }
+                        }
+                    ],
+                    "id": "436a69c2-a7ad-4c52-9805-e81cb8734a27",
+                    "matches_hash": "abcabcabcx-12942237095398750",
+                    "modified_at": 1636734207662,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/process/conflict/attack",
+                        "concept_score": 0.7,
+                        "factor": "conflict",
+                        "geo_context": {},
+                        "polarity": -1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/conflict/attack",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/innovation",
+                        "concept_score": 0.812780617561135,
+                        "factor": "common approach",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/innovation",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                }
+            ],
+            "target": "wm/process/conflict/attack"
+        },
+        {
+            "polarity": 1,
+            "source": "wm/process/attempt",
+            "statements": [
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "neutral",
+                                    "sentiment_score": 0.5,
+                                    "stance": "",
+                                    "subjectivity": "subjective",
+                                    "subjectivity_score": 0.3
+                                },
+                                "author": "Sandra Augustin",
+                                "doc_id": "02a9a5e3477d6a1570ad3c6a585c015b",
+                                "document_source": "",
+                                "file_type": "application/pdf",
+                                "label": [
+                                    "Phase 3"
+                                ],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1490054400000,
+                                    "day": 21,
+                                    "month": 3,
+                                    "year": 2017
+                                },
+                                "publisher_name": "",
+                                "title": "MC Short Report"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "program",
+                                    "a measurable positive impact"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -7682607783729395000,
+                                "subj_adjectives": [],
+                                "text": "Mercy Corps' CONCUR program had a measurable positive impact on peace and violence reduction outcomes relative to comparison sites that did not receive this intervention."
+                            }
+                        }
+                    ],
+                    "id": "8566e1f1-c8d4-4825-ab03-5fadffe5c731",
+                    "matches_hash": 34211688805533430,
+                    "modified_at": 1636734207582,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/economy/economy",
+                        "concept_score": 0.861084385695638,
+                        "factor": "a measurable positive impact",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/economy/economy",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.9999999999999999,
+                        "factor": "program",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "neutral",
+                                    "sentiment_score": 0.5,
+                                    "stance": "",
+                                    "subjectivity": "subjective",
+                                    "subjectivity_score": 0.3
+                                },
+                                "author": "Sandra Augustin",
+                                "doc_id": "02a9a5e3477d6a1570ad3c6a585c015b",
+                                "document_source": "",
+                                "file_type": "application/pdf",
+                                "label": [
+                                    "Phase 3"
+                                ],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1490054400000,
+                                    "day": 21,
+                                    "month": 3,
+                                    "year": 2017
+                                },
+                                "publisher_name": "",
+                                "title": "MC Short Report"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "program",
+                                    "a measurable positive impact"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -7682607783729395000,
+                                "subj_adjectives": [],
+                                "text": "Mercy Corps' CONCUR program had a measurable positive impact on peace and violence reduction outcomes relative to comparison sites that did not receive this intervention."
+                            }
+                        }
+                    ],
+                    "id": "8566e1f1-c8d4-4825-ab03-5fadffe5c731",
+                    "matches_hash": "abcabcx34211688805533430",
+                    "modified_at": 1636734207582,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/economy/economy",
+                        "concept_score": 0.861084385695638,
+                        "factor": "a measurable positive impact",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/economy/economy",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.9999999999999999,
+                        "factor": "program",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "neutral",
+                                    "sentiment_score": 0.5,
+                                    "stance": "",
+                                    "subjectivity": "subjective",
+                                    "subjectivity_score": 0.3
+                                },
+                                "author": "Sandra Augustin",
+                                "doc_id": "02a9a5e3477d6a1570ad3c6a585c015b",
+                                "document_source": "",
+                                "file_type": "application/pdf",
+                                "label": [
+                                    "Phase 3"
+                                ],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1490054400000,
+                                    "day": 21,
+                                    "month": 3,
+                                    "year": 2017
+                                },
+                                "publisher_name": "",
+                                "title": "MC Short Report"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "program",
+                                    "a measurable positive impact"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -7682607783729395000,
+                                "subj_adjectives": [],
+                                "text": "Mercy Corps' CONCUR program had a measurable positive impact on peace and violence reduction outcomes relative to comparison sites that did not receive this intervention."
+                            }
+                        }
+                    ],
+                    "id": "8566e1f1-c8d4-4825-ab03-5fadffe5c731",
+                    "matches_hash": "abc34211688805533430",
+                    "modified_at": 1636734207582,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/economy/economy",
+                        "concept_score": 0.861084385695638,
+                        "factor": "a measurable positive impact",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/economy/economy",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.9999999999999999,
+                        "factor": "program",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "neutral",
+                                    "sentiment_score": 0.5,
+                                    "stance": "",
+                                    "subjectivity": "subjective",
+                                    "subjectivity_score": 0.3
+                                },
+                                "author": "Sandra Augustin",
+                                "doc_id": "02a9a5e3477d6a1570ad3c6a585c015b",
+                                "document_source": "",
+                                "file_type": "application/pdf",
+                                "label": [
+                                    "Phase 3"
+                                ],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1490054400000,
+                                    "day": 21,
+                                    "month": 3,
+                                    "year": 2017
+                                },
+                                "publisher_name": "",
+                                "title": "MC Short Report"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "program",
+                                    "a measurable positive impact"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -7682607783729395000,
+                                "subj_adjectives": [],
+                                "text": "Mercy Corps' CONCUR program had a measurable positive impact on peace and violence reduction outcomes relative to comparison sites that did not receive this intervention."
+                            }
+                        }
+                    ],
+                    "id": "8566e1f1-c8d4-4825-ab03-5fadffe5c731",
+                    "matches_hash": "abcabcabcx34211688805533430",
+                    "modified_at": 1636734207582,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/economy/economy",
+                        "concept_score": 0.861084385695638,
+                        "factor": "a measurable positive impact",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/economy/economy",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/process/attempt",
+                        "concept_score": 0.9999999999999999,
+                        "factor": "program",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/process/attempt",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                }
+            ],
+            "target": "wm/concept/economy/economy"
+        },
+        {
+            "polarity": 1,
+            "source": "wm/concept/innovation",
+            "statements": [
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Lu:TianRan",
+                                "doc_id": "2927c43834689835bbd9b0214f860848",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1390521600000,
+                                    "day": 24,
+                                    "month": 1,
+                                    "year": 2014
+                                },
+                                "publisher_name": "Xinhua News Agency",
+                                "title": "UN pledges to help Kenya speed up anti-poverty goals"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "innovative approaches",
+                                    "inclusive economic growth"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -3265104483154134000,
+                                "subj_adjectives": [],
+                                "text": "\"The UN will continue to accelerate progress in MDGs through innovative approaches designed to help the national and county governments identify and resolve barriers to eradicating extreme poverty, promote inclusive economic growth and job creation, and foster peace and cohesion,\" the statement said."
+                            }
+                        }
+                    ],
+                    "id": "c16bee39-a7a5-43d7-8195-48ba79083469",
+                    "matches_hash": 16390046047014948,
+                    "modified_at": 1636734205917,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/economy/economy",
+                        "concept_score": 0.9950910828512551,
+                        "factor": "inclusive economic growth",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/economy/economy",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/innovation",
+                        "concept_score": 0.8209743159640533,
+                        "factor": "innovative approaches",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/innovation",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Lu:TianRan",
+                                "doc_id": "2927c43834689835bbd9b0214f860848",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1390521600000,
+                                    "day": 24,
+                                    "month": 1,
+                                    "year": 2014
+                                },
+                                "publisher_name": "Xinhua News Agency",
+                                "title": "UN pledges to help Kenya speed up anti-poverty goals"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "innovative approaches",
+                                    "inclusive economic growth"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -3265104483154134000,
+                                "subj_adjectives": [],
+                                "text": "\"The UN will continue to accelerate progress in MDGs through innovative approaches designed to help the national and county governments identify and resolve barriers to eradicating extreme poverty, promote inclusive economic growth and job creation, and foster peace and cohesion,\" the statement said."
+                            }
+                        }
+                    ],
+                    "id": "c16bee39-a7a5-43d7-8195-48ba79083469",
+                    "matches_hash": "abcabcx16390046047014948",
+                    "modified_at": 1636734205917,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/economy/economy",
+                        "concept_score": 0.9950910828512551,
+                        "factor": "inclusive economic growth",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/economy/economy",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/innovation",
+                        "concept_score": 0.8209743159640533,
+                        "factor": "innovative approaches",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/innovation",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Lu:TianRan",
+                                "doc_id": "2927c43834689835bbd9b0214f860848",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1390521600000,
+                                    "day": 24,
+                                    "month": 1,
+                                    "year": 2014
+                                },
+                                "publisher_name": "Xinhua News Agency",
+                                "title": "UN pledges to help Kenya speed up anti-poverty goals"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "innovative approaches",
+                                    "inclusive economic growth"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -3265104483154134000,
+                                "subj_adjectives": [],
+                                "text": "\"The UN will continue to accelerate progress in MDGs through innovative approaches designed to help the national and county governments identify and resolve barriers to eradicating extreme poverty, promote inclusive economic growth and job creation, and foster peace and cohesion,\" the statement said."
+                            }
+                        }
+                    ],
+                    "id": "c16bee39-a7a5-43d7-8195-48ba79083469",
+                    "matches_hash": "abc16390046047014948",
+                    "modified_at": 1636734205917,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/economy/economy",
+                        "concept_score": 0.9950910828512551,
+                        "factor": "inclusive economic growth",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/economy/economy",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/innovation",
+                        "concept_score": 0.8209743159640533,
+                        "factor": "innovative approaches",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/innovation",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                },
+                {
+                    "belief": 0.65,
+                    "evidence": [
+                        {
+                            "document_context": {
+                                "analysis": {
+                                    "sentiment": "",
+                                    "sentiment_score": 0,
+                                    "stance": "",
+                                    "subjectivity": "",
+                                    "subjectivity_score": 0
+                                },
+                                "author": "Lu:TianRan",
+                                "doc_id": "2927c43834689835bbd9b0214f860848",
+                                "document_source": "",
+                                "file_type": "application/json",
+                                "label": [],
+                                "origin": {
+                                    "assembly_request_id": "init",
+                                    "byod_tag": "Default",
+                                    "modified_at": 1627678011022
+                                },
+                                "publication_date": {
+                                    "date": 1390521600000,
+                                    "day": 24,
+                                    "month": 1,
+                                    "year": 2014
+                                },
+                                "publisher_name": "Xinhua News Agency",
+                                "title": "UN pledges to help Kenya speed up anti-poverty goals"
+                            },
+                            "evidence_context": {
+                                "agents_text": [
+                                    "innovative approaches",
+                                    "inclusive economic growth"
+                                ],
+                                "contradiction_words": [],
+                                "hedging_words": [],
+                                "obj_adjectives": [],
+                                "source_api": "hume",
+                                "source_hash": -3265104483154134000,
+                                "subj_adjectives": [],
+                                "text": "\"The UN will continue to accelerate progress in MDGs through innovative approaches designed to help the national and county governments identify and resolve barriers to eradicating extreme poverty, promote inclusive economic growth and job creation, and foster peace and cohesion,\" the statement said."
+                            }
+                        }
+                    ],
+                    "id": "c16bee39-a7a5-43d7-8195-48ba79083469",
+                    "matches_hash": "abcabcabcx16390046047014948",
+                    "modified_at": 1636734205917,
+                    "obj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/economy/economy",
+                        "concept_score": 0.9950910828512551,
+                        "factor": "inclusive economic growth",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/economy/economy",
+                        "theme_property": "",
+                        "time_context": {}
+                    },
+                    "subj": {
+                        "adjectives": [],
+                        "concept": "wm/concept/innovation",
+                        "concept_score": 0.8209743159640533,
+                        "factor": "innovative approaches",
+                        "geo_context": {},
+                        "polarity": 1,
+                        "process": "",
+                        "process_property": "",
+                        "theme": "wm/concept/innovation",
+                        "theme_property": "",
+                        "time_context": {}
+                    }
+                }
+            ],
+            "target": "wm/concept/economy/economy"
+        }
+    ],
+    "id": "dyse-graph-like2",
+    "nodes": [
+        {
+            "concept": "wm/process/legislate/regulate",
+            "indicator": "Abstract 0",
+            "maxValue": 1,
+            "minValue": 0,
+            "numLevels": 31,
+            "period": 1,
+            "resolution": "month",
+            "values": [
+                {
+                    "timestamp": 1483228800000,
+                    "value": 0.5
+                },
+                {
+                    "timestamp": 1485907200000,
+                    "value": 0.5
+                },
+                {
+                    "timestamp": 1488326400000,
+                    "value": 0.5
+                }
+            ]
+        },
+        {
+            "concept": "wm/concept/crisis_or_disaster/conflict/discontent",
+            "indicator": "Abstract 1",
+            "maxValue": 1,
+            "minValue": 0,
+            "numLevels": 31,
+            "period": 1,
+            "resolution": "month",
+            "values": [
+                {
+                    "timestamp": 1483228800000,
+                    "value": 0.5
+                },
+                {
+                    "timestamp": 1485907200000,
+                    "value": 0.5
+                },
+                {
+                    "timestamp": 1488326400000,
+                    "value": 0.5
+                }
+            ]
+        },
+        {
+            "concept": "wm/concept/innovation",
+            "indicator": "Vulnerability Index 2",
+            "maxValue": 0.5861377753317356,
+            "minValue": 0.5553166680037975,
+            "numLevels": 31,
+            "period": 12,
+            "resolution": "month",
+            "values": [
+                {
+                    "timestamp": 788918400000,
+                    "value": 0.574355848133564
+                },
+                {
+                    "timestamp": 820454400000,
+                    "value": 0.5732076354324818
+                },
+                {
+                    "timestamp": 852076800000,
+                    "value": 0.5732949078083038
+                },
+                {
+                    "timestamp": 883612800000,
+                    "value": 0.5725548043847084
+                },
+                {
+                    "timestamp": 915148800000,
+                    "value": 0.5717466399073601
+                },
+                {
+                    "timestamp": 946684800000,
+                    "value": 0.5709422193467617
+                },
+                {
+                    "timestamp": 978307200000,
+                    "value": 0.5726282708346844
+                },
+                {
+                    "timestamp": 1009843200000,
+                    "value": 0.5739796012639999
+                },
+                {
+                    "timestamp": 1041379200000,
+                    "value": 0.5751051269471645
+                },
+                {
+                    "timestamp": 1072915200000,
+                    "value": 0.5747206993401051
+                },
+                {
+                    "timestamp": 1104537600000,
+                    "value": 0.5733275897800922
+                },
+                {
+                    "timestamp": 1136073600000,
+                    "value": 0.5739284567534924
+                },
+                {
+                    "timestamp": 1167609600000,
+                    "value": 0.5703589990735054
+                },
+                {
+                    "timestamp": 1199145600000,
+                    "value": 0.5722510814666748
+                },
+                {
+                    "timestamp": 1230768000000,
+                    "value": 0.5737078711390495
+                },
+                {
+                    "timestamp": 1262304000000,
+                    "value": 0.5749337188899517
+                },
+                {
+                    "timestamp": 1293840000000,
+                    "value": 0.5758640728890896
+                },
+                {
+                    "timestamp": 1325376000000,
+                    "value": 0.5749385096132755
+                },
+                {
+                    "timestamp": 1356998400000,
+                    "value": 0.572977889329195
+                },
+                {
+                    "timestamp": 1388534400000,
+                    "value": 0.5720671899616718
+                },
+                {
+                    "timestamp": 1420070400000,
+                    "value": 0.5691880211234093
+                },
+                {
+                    "timestamp": 1451606400000,
+                    "value": 0.5655903704464436
+                },
+                {
+                    "timestamp": 1483228800000,
+                    "value": 0.5675729587674141
+                },
+                {
+                    "timestamp": 1514764800000,
+                    "value": 0.5660022385418415
+                },
+                {
+                    "timestamp": 1546300800000,
+                    "value": 0.5656731054186821
+                }
+            ]
+        },
+        {
+            "concept": "wm/process/conflict/attack",
+            "indicator": "Battle Related Deaths (Number Of People) 3",
+            "maxValue": 21583.27870967742,
+            "minValue": -9399.397419354837,
+            "numLevels": 31,
+            "period": 12,
+            "resolution": "month",
+            "values": [
+                {
+                    "timestamp": 599616000000,
+                    "value": 1789
+                },
+                {
+                    "timestamp": 631152000000,
+                    "value": 3672.2444444444445
+                },
+                {
+                    "timestamp": 662688000000,
+                    "value": 2871.0222222222224
+                },
+                {
+                    "timestamp": 694224000000,
+                    "value": 1588.4888888888888
+                },
+                {
+                    "timestamp": 725846400000,
+                    "value": 1857.5813953488373
+                },
+                {
+                    "timestamp": 757382400000,
+                    "value": 1861.7073170731708
+                },
+                {
+                    "timestamp": 788918400000,
+                    "value": 1703.75
+                },
+                {
+                    "timestamp": 820454400000,
+                    "value": 1709.342105263158
+                },
+                {
+                    "timestamp": 852076800000,
+                    "value": 1990.1891891891892
+                },
+                {
+                    "timestamp": 883612800000,
+                    "value": 1922.6486486486488
+                },
+                {
+                    "timestamp": 915148800000,
+                    "value": 3641.8205128205127
+                },
+                {
+                    "timestamp": 946684800000,
+                    "value": 4427.135135135135
+                },
+                {
+                    "timestamp": 978307200000,
+                    "value": 1272.820512820513
+                },
+                {
+                    "timestamp": 1009843200000,
+                    "value": 1330.7096774193549
+                },
+                {
+                    "timestamp": 1041379200000,
+                    "value": 1389.6896551724137
+                },
+                {
+                    "timestamp": 1072915200000,
+                    "value": 1118.942857142857
+                },
+                {
+                    "timestamp": 1104537600000,
+                    "value": 928.1612903225806
+                },
+                {
+                    "timestamp": 1136073600000,
+                    "value": 1562.0333333333333
+                },
+                {
+                    "timestamp": 1167609600000,
+                    "value": 1434.9655172413793
+                },
+                {
+                    "timestamp": 1199145600000,
+                    "value": 2594.4594594594596
+                },
+                {
+                    "timestamp": 1230768000000,
+                    "value": 6162.25
+                },
+                {
+                    "timestamp": 1262304000000,
+                    "value": 1882.6923076923076
+                },
+                {
+                    "timestamp": 1293840000000,
+                    "value": 2118.542857142857
+                },
+                {
+                    "timestamp": 1325376000000,
+                    "value": 5219.4838709677415
+                },
+                {
+                    "timestamp": 1356998400000,
+                    "value": 5874.181818181818
+                },
+                {
+                    "timestamp": 1388534400000,
+                    "value": 9622.027777777777
+                },
+                {
+                    "timestamp": 1420070400000,
+                    "value": 11212.4
+                },
+                {
+                    "timestamp": 1451606400000,
+                    "value": 11255.72
+                },
+                {
+                    "timestamp": 1483228800000,
+                    "value": 8511.282608695652
+                },
+                {
+                    "timestamp": 1514764800000,
+                    "value": 5425.5625
+                },
+                {
+                    "timestamp": 1546300800000,
+                    "value": 6099.448979591837
+                }
+            ]
+        },
+        {
+            "concept": "wm/concept/economy/economy",
+            "indicator": "Abstract 4",
+            "maxValue": 1,
+            "minValue": 0,
+            "numLevels": 31,
+            "period": 1,
+            "resolution": "month",
+            "values": [
+                {
+                    "timestamp": 1483228800000,
+                    "value": 0.5
+                },
+                {
+                    "timestamp": 1485907200000,
+                    "value": 0.5
+                },
+                {
+                    "timestamp": 1488326400000,
+                    "value": 0.5
+                }
+            ]
+        },
+        {
+            "concept": "wm/process/attempt",
+            "indicator": "HH Consumption Legumes, Nuts, And Seeds  5",
+            "maxValue": 163.8459346488171,
+            "minValue": 0,
+            "numLevels": 31,
+            "period": 12,
+            "resolution": "month",
+            "values": [
+                {
+                    "timestamp": 1543622400000,
+                    "value": 81.92296732440855
+                },
+                {
+                    "timestamp": 1546300800000,
+                    "value": 81.92296732440855
+                }
+            ]
+        }
+    ]
+}
