@@ -115,106 +115,106 @@
       "maxValue": 24,
       "values": [
         {
-          "value": 4,
+          "value": 8,
           "timestamp": 1577836800000
         },
         {
-          "value": 5,
+          "value": 9,
           "timestamp": 1580515200000
         },
         {
-          "value": 6,
+          "value": 10,
           "timestamp": 1583020800000
         },
         {
-          "value": 7,
+          "value": 11,
           "timestamp": 1585699200000
         },
         {
-          "value": 8,
+          "value": 12,
           "timestamp": 1588291200000
         },
         {
-          "value": 9,
+          "value": 13,
           "timestamp": 1590969600000
         },
         {
-          "value": 10,
+          "value": 14,
           "timestamp": 1593561600000
         },
         {
-          "value": 11,
+          "value": 15,
           "timestamp": 1596240000000
         },
         {
-          "value": 12,
+          "value": 16,
           "timestamp": 1598918400000
         },
         {
-          "value": 13,
+          "value": 17,
           "timestamp": 1601510400000
         },
         {
-          "value": 14,
+          "value": 18,
           "timestamp": 1604188800000
         },
         {
-          "value": 15,
+          "value": 19,
           "timestamp": 1606780800000
         },
         {
-          "value": 4,
+          "value": 8,
           "timestamp": 1609459200000
         },
         {
-          "value": 5,
+          "value": 9,
           "timestamp": 1612137600000
         },
         {
-          "value": 6,
+          "value": 10,
           "timestamp": 1614556800000
         },
         {
-          "value": 7,
+          "value": 11,
           "timestamp": 1617235200000
         },
         {
-          "value": 8,
+          "value": 12,
           "timestamp": 1619827200000
         },
         {
-          "value": 9,
+          "value": 13,
           "timestamp": 1622505600000
         },
         {
-          "value": 10,
+          "value": 14,
           "timestamp": 1625097600000
         },
         {
-          "value": 11,
+          "value": 15,
           "timestamp": 1627776000000
         },
         {
-          "value": 12,
+          "value": 16,
           "timestamp": 1630454400000
         },
         {
-          "value": 13,
+          "value": 17,
           "timestamp": 1633046400000
         },
         {
-          "value": 14,
+          "value": 18,
           "timestamp": 1635724800000
         },
         {
-          "value": 15,
+          "value": 19,
           "timestamp": 1638316800000
         }
 
       ],
       "numLevels": 31,
       "resolution": "month",
-      "period": 1
+      "period": 12
     }
   ],
   "edges": [
