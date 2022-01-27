@@ -126,7 +126,12 @@ async function runTest() {
   let end = 0; 
 
   start = (new Date()).getTime();
-  result = await createModel(createModelPayload);
+  try {
+    result = await createModel(createModelPayload);
+  } catch (e) {
+    console.log('ERROR', e);
+    return;
+  }
   console.log('model status', result.status);
   end = (new Date()).getTime();
 
