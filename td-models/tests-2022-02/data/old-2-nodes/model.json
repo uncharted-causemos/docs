@@ -1,145 +1,256 @@
 {
-    "conceptIndicators": {
-        "a": {
-            "func": "last",
-            "maxValue": 2,
-            "minValue": -1,
-            "name": "a_indicator",
-            "numLevels": 31,
-            "period": 1,
-            "resolution": "month",
-            "source": "",
-            "values": [
-                {
-                    "timestamp": 1577836800000,
-                    "value": 0.0
-                },
-                {
-                    "timestamp": 1580515200000,
-                    "value": 0.09090909090909091
-                },
-                {
-                    "timestamp": 1583020800000,
-                    "value": 0.18181818181818182
-                },
-                {
-                    "timestamp": 1585699200000,
-                    "value": 0.2727272727272727
-                },
-                {
-                    "timestamp": 1588291200000,
-                    "value": 0.36363636363636365
-                },
-                {
-                    "timestamp": 1590969600000,
-                    "value": 0.4545454545454546
-                },
-                {
-                    "timestamp": 1593561600000,
-                    "value": 0.5454545454545454
-                },
-                {
-                    "timestamp": 1596240000000,
-                    "value": 0.6363636363636364
-                },
-                {
-                    "timestamp": 1598918400000,
-                    "value": 0.7272727272727273
-                },
-                {
-                    "timestamp": 1601510400000,
-                    "value": 0.8181818181818182
-                },
-                {
-                    "timestamp": 1604188800000,
-                    "value": 0.9090909090909092
-                },
-                {
-                    "timestamp": 1606780800000,
-                    "value": 1.0
-                }
-            ]
-        },
-        "b": {
-            "func": "last",
-            "maxValue": 2,
-            "minValue": -1,
-            "name": "b_indicator",
-            "numLevels": 31,
-            "period": 1,
-            "resolution": "month",
-            "source": "",
-            "values": [
-                {
-                    "timestamp": 1577836800000,
-                    "value": 0.0
-                },
-                {
-                    "timestamp": 1580515200000,
-                    "value": 0.09090909090909091
-                },
-                {
-                    "timestamp": 1583020800000,
-                    "value": 0.18181818181818182
-                },
-                {
-                    "timestamp": 1585699200000,
-                    "value": 0.2727272727272727
-                },
-                {
-                    "timestamp": 1588291200000,
-                    "value": 0.36363636363636365
-                },
-                {
-                    "timestamp": 1590969600000,
-                    "value": 0.4545454545454546
-                },
-                {
-                    "timestamp": 1593561600000,
-                    "value": 0.5454545454545454
-                },
-                {
-                    "timestamp": 1596240000000,
-                    "value": 0.6363636363636364
-                },
-                {
-                    "timestamp": 1598918400000,
-                    "value": 0.7272727272727273
-                },
-                {
-                    "timestamp": 1601510400000,
-                    "value": 0.8181818181818182
-                },
-                {
-                    "timestamp": 1604188800000,
-                    "value": 0.9090909090909092
-                },
-                {
-                    "timestamp": 1606780800000,
-                    "value": 1.0
-                }
-            ]
-        }
-    },
     "id": "old-2-nodes",
     "statements": [
         {
-            "belief": 1,
-            "evidence": [],
-            "id": "cd7a8f7a-c466-4ee4-8bcc-74b74276b85e",
-            "matches_hash": 0,
+            "evidence": [
+                {
+                    "document_context": {
+                        "publisher_name": "",
+                        "file_type": "application/pdf",
+                        "author": "",
+                        "origin": {
+                            "byod_tag": "Default",
+                            "assembly_request_id": "init",
+                            "modified_at": 1627678011022
+                        },
+                        "document_source": "",
+                        "publication_date": {
+                            "date": 1395878400000,
+                            "month": 3,
+                            "year": 2014,
+                            "day": 27
+                        },
+                        "label": [],
+                        "title": "",
+                        "analysis": {
+                            "sentiment": "neutral",
+                            "sentiment_score": 0.48,
+                            "subjectivity_score": 0.11,
+                            "subjectivity": "subjective",
+                            "stance": ""
+                        },
+                        "doc_id": "50a1794a17a2d7b4431515b91f9075cb"
+                    },
+                    "evidence_context": {
+                        "source_api": "hume",
+                        "obj_adjectives": [],
+                        "contradiction_words": [],
+                        "subj_adjectives": [],
+                        "agents_text": [
+                            "economic toll",
+                            "access"
+                        ],
+                        "hedging_words": [],
+                        "text": "The human and economic toll of the 2011 drought in the Horn of Africa was a stark reminder for the international community of the consequences of resource degradation, reduced access to and competition over range land resources, climate change, weak governance, and a history of marginalization and under investment in the dry lands.",
+                        "source_hash": -5908132471883873000
+                    }
+                }
+            ],
             "obj": {
-                "concept": "b",
-                "factor": "micro change in food prices",
-                "polarity": 1,
-                "theme": "b"
+                "geo_context": {},
+                "process": "",
+                "time_context": {},
+                "theme_property": "",
+                "concept": "wm/process/access",
+                "concept_score": 1,
+                "theme": "wm/process/access",
+                "process_property": "",
+                "factor": "access",
+                "polarity": -1,
+                "adjectives": []
             },
+            "id": "9dd755cf-fdb8-4524-a8bf-1b5b9a69ddfc-6baeb362-6b83-47a0-8b1b-9632b4e21bf2",
+            "matches_hash": -35924861668658616,
+            "modified_at": 1636738050245,
             "subj": {
-                "concept": "a",
-                "factor": "a impressive increase in rainfall",
+                "geo_context": {
+                    "name": "Politischer Bezirk Horn",
+                    "location": {
+                        "lon": 15.68712,
+                        "lat": 48.71341
+                    }
+                },
+                "process": "",
+                "time_context": {
+                    "start": {
+                        "date": 1293840000000,
+                        "month": 1,
+                        "year": 2011,
+                        "day": 1
+                    },
+                    "end": {
+                        "date": 1325376000000,
+                        "month": 1,
+                        "year": 2012,
+                        "day": 1
+                    }
+                },
+                "theme_property": "",
+                "concept": "wm/concept/economy/economy",
+                "concept_score": 0.9950910828512551,
+                "theme": "wm/concept/economy/economy",
+                "process_property": "",
+                "factor": "economic toll",
                 "polarity": 1,
-                "theme": "a"
-            }
+                "adjectives": []
+            },
+            "belief": 0.65
         }
-    ]
+    ],
+    "conceptIndicators": {
+        "wm/process/access": {
+            "name": "Mobile Cellular Subscriptions (Per 100 People) 0",
+            "minValue": 0,
+            "maxValue": 207.5380401611328,
+            "func": "last",
+            "values": [
+                {
+                    "value": 0,
+                    "timestamp": 631152000000
+                },
+                {
+                    "value": 0,
+                    "timestamp": 662688000000
+                },
+                {
+                    "value": 0.0043433490209281445,
+                    "timestamp": 694224000000
+                },
+                {
+                    "value": 0.004445937927812338,
+                    "timestamp": 725846400000
+                },
+                {
+                    "value": 0.007383903954178095,
+                    "timestamp": 757382400000
+                },
+                {
+                    "value": 0.008207201026380062,
+                    "timestamp": 788918400000
+                },
+                {
+                    "value": 0.00988476537168026,
+                    "timestamp": 820454400000
+                },
+                {
+                    "value": 0.02300475351512432,
+                    "timestamp": 852076800000
+                },
+                {
+                    "value": 0.035556450486183167,
+                    "timestamp": 883612800000
+                },
+                {
+                    "value": 0.07639212161302567,
+                    "timestamp": 915148800000
+                },
+                {
+                    "value": 0.3985789716243744,
+                    "timestamp": 946684800000
+                },
+                {
+                    "value": 1.826563835144043,
+                    "timestamp": 978307200000
+                },
+                {
+                    "value": 3.5172173976898193,
+                    "timestamp": 1009843200000
+                },
+                {
+                    "value": 4.587200164794922,
+                    "timestamp": 1041379200000
+                },
+                {
+                    "value": 7.145047187805176,
+                    "timestamp": 1072915200000
+                },
+                {
+                    "value": 12.592445373535156,
+                    "timestamp": 1104537600000
+                },
+                {
+                    "value": 19.496694564819336,
+                    "timestamp": 1136073600000
+                },
+                {
+                    "value": 29.32215118408203,
+                    "timestamp": 1167609600000
+                },
+                {
+                    "value": 40.972007751464844,
+                    "timestamp": 1199145600000
+                },
+                {
+                    "value": 47.34403610229492,
+                    "timestamp": 1230768000000
+                },
+                {
+                    "value": 59.40635299682617,
+                    "timestamp": 1262304000000
+                },
+                {
+                    "value": 65.03449249267578,
+                    "timestamp": 1293840000000
+                },
+                {
+                    "value": 69.30390167236328,
+                    "timestamp": 1325376000000
+                },
+                {
+                    "value": 69.92534637451172,
+                    "timestamp": 1356998400000
+                },
+                {
+                    "value": 72.01839447021484,
+                    "timestamp": 1388534400000
+                },
+                {
+                    "value": 78.77455139160156,
+                    "timestamp": 1420070400000
+                },
+                {
+                    "value": 79.4719009399414,
+                    "timestamp": 1451606400000
+                },
+                {
+                    "value": 85.25315856933594,
+                    "timestamp": 1483228800000
+                },
+                {
+                    "value": 96.3202133178711,
+                    "timestamp": 1514764800000
+                },
+                {
+                    "value": 103.7690200805664,
+                    "timestamp": 1546300800000
+                }
+            ],
+            "numLevels": 31,
+            "resolution": "month",
+            "period": 12
+        },
+        "wm/concept/economy/economy": {
+            "name": "Abstract 1",
+            "minValue": 0,
+            "maxValue": 1,
+            "func": "last",
+            "values": [
+                {
+                    "value": 0.5,
+                    "timestamp": 1483228800000
+                },
+                {
+                    "value": 0.5,
+                    "timestamp": 1485907200000
+                },
+                {
+                    "value": 0.5,
+                    "timestamp": 1488326400000
+                }
+            ],
+            "numLevels": 31,
+            "resolution": "month",
+            "period": 1
+        }
+    }
 }
