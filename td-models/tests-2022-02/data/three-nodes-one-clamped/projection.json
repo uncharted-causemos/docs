@@ -1,0 +1,31 @@
+{
+  "experimentType": "PROJECTION",
+  "experimentParam": {
+    "numTimesteps": 12,
+    "startTime": 1609459200000,
+    "endTime": 1638316800000,
+    "constraints": [
+      {
+        "concept": "wm/concept/agriculture/crop/crops_production",
+        "values": [
+          {
+            "step": 2,
+            "value": 0.7666666666666666
+          },
+          {
+            "step": 5,
+            "value": 0.6333333333333333
+          },
+          {
+            "step": 8,
+            "value": 0.5333333333333332
+          },
+          {
+            "step": 11,
+            "value": 0.4
+          }
+        ]
+      }
+    ]
+  }
+}
