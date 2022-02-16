@@ -415,7 +415,7 @@ components:
                     properties:
                       concept:
                         type: string
-                      value:
+                      values:
                         type: array
                         items:
                           type: object
