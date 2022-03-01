@@ -1,0 +1,153 @@
+{
+  "id": "dyse-inference",
+  "nodes": [
+    {
+      "concept": "A",
+      "indicator": "Abstract A",
+      "minValue": 0,
+      "maxValue": 30,
+      "values": [
+        { "value": 10, "timestamp": 1609459200000 },
+        { "value": 11, "timestamp": 1612137600000 },
+        { "value": 12, "timestamp": 1614556800000 },
+        { "value": 13, "timestamp": 1617235200000 },
+        { "value": 14, "timestamp": 1619827200000 },
+        { "value": 15, "timestamp": 1622505600000 },
+        { "value": 16, "timestamp": 1625097600000 },
+        { "value": 17, "timestamp": 1627776000000 },
+        { "value": 18, "timestamp": 1630454400000 },
+        { "value": 19, "timestamp": 1633046400000 },
+        { "value": 20, "timestamp": 1635724800000 }
+      ],
+      "numLevels": 31,
+      "resolution": "month",
+      "period": 12
+    },
+    {
+      "concept": "B",
+      "indicator": "Abstract B",
+      "minValue": 0,
+      "maxValue": 30,
+      "values": [
+        { "value": 10, "timestamp": 1609459200000 },
+        { "value": 12, "timestamp": 1612137600000 },
+        { "value": 14, "timestamp": 1614556800000 },
+        { "value": 12, "timestamp": 1617235200000 },
+        { "value": 18, "timestamp": 1619827200000 },
+        { "value": 20, "timestamp": 1622505600000 },
+        { "value": 18, "timestamp": 1625097600000 },
+        { "value": 16, "timestamp": 1627776000000 },
+        { "value": 14, "timestamp": 1630454400000 },
+        { "value": 12, "timestamp": 1633046400000 },
+        { "value": 10, "timestamp": 1635724800000 }
+      ],
+      "numLevels": 31,
+      "resolution": "month",
+      "period": 12
+    },
+    {
+      "concept": "C",
+      "indicator": "Abstract C",
+      "minValue": 0,
+      "maxValue": 30,
+      "values": [
+        { "value": 10, "timestamp": 1609459200000 },
+        { "value": 10, "timestamp": 1612137600000 },
+        { "value": 11.4, "timestamp": 1614556800000 },
+        { "value": 13.22, "timestamp": 1617235200000 },
+        { "value": 13.36, "timestamp": 1619827200000 },
+        { "value": 16.62, "timestamp": 1622505600000 },
+        { "value": 18.54, "timestamp": 1625097600000 },
+        { "value": 18.78, "timestamp": 1627776000000 },
+        { "value": 18.39, "timestamp": 1630454400000 },
+        { "value": 17.76, "timestamp": 1633046400000 },
+        { "value": 17.06, "timestamp": 1635724800000 }
+      ],
+      "numLevels": 31,
+      "resolution": "month",
+      "period": 1
+    },
+    {
+      "concept": "D",
+      "indicator": "Abstract D",
+      "minValue": 0,
+      "maxValue": 30,
+      "values": [
+        { "value": 10, "timestamp": 1609459200000 },
+        { "value": 11, "timestamp": 1612137600000 },
+        { "value": 12.71, "timestamp": 1614556800000 },
+        { "value": 14.27, "timestamp": 1617235200000 },
+        { "value": 14.58, "timestamp": 1619827200000 },
+        { "value": 17.56, "timestamp": 1622505600000 },
+        { "value": 20, "timestamp": 1625097600000 },
+        { "value": 20.18, "timestamp": 1627776000000 },
+        { "value": 19.83, "timestamp": 1630454400000 },
+        { "value": 19.11, "timestamp": 1633046400000 },
+        { "value": 18.43, "timestamp": 1635724800000 }
+      ],
+      "numLevels": 31,
+      "resolution": "month",
+      "period": 12
+    },
+    {
+      "concept": "E",
+      "indicator": "Abstract E",
+      "minValue": 0,
+      "maxValue": 30,
+      "values": [
+        { "value": 10, "timestamp": 1609459200000 },
+        { "value": 9.78, "timestamp": 1612137600000 },
+        { "value": 10.02, "timestamp": 1614556800000 },
+        { "value": 12.21, "timestamp": 1617235200000 },
+        { "value": 13.28, "timestamp": 1619827200000 },
+        { "value": 15.33, "timestamp": 1622505600000 },
+        { "value": 17.85, "timestamp": 1625097600000 },
+        { "value": 19.4, "timestamp": 1627776000000 },
+        { "value": 19.82, "timestamp": 1630454400000 },
+        { "value": 19.49, "timestamp": 1633046400000 },
+        { "value": 18.85, "timestamp": 1635724800000 }
+      ],
+      "numLevels": 31,
+      "resolution": "month",
+      "period": 12
+    }
+  ],
+  "edges": [
+    {
+      "source": "A",
+      "target": "C",
+      "polarity": 1,
+      "statements": []
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "polarity": 1,
+      "statements": []
+    },
+    {
+      "source": "A",
+      "target": "D",
+      "polarity": 1,
+      "statements": []
+    },
+    {
+      "source": "B",
+      "target": "D",
+      "polarity": 1,
+      "statements": []
+    },
+    {
+      "source": "C",
+      "target": "E",
+      "polarity": 1,
+      "statements": []
+    },
+    {
+      "source": "D",
+      "target": "E",
+      "polarity": -1,
+      "statements": []
+    }
+  ]
+}
